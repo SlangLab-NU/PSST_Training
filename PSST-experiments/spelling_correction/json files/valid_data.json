@@ -1,0 +1,2048 @@
+[
+    {
+        "id": "BU01a-BNT01-house",
+        "prompt": "house",
+        "actual": "HH AW S",
+        "prediction": "HH AW S"
+    },
+    {
+        "id": "BU01a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "K OW M"
+    },
+    {
+        "id": "BU01a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "T UW TH B R AH SH",
+        "prediction": "T UW TH B  R AH SH"
+    },
+    {
+        "id": "BU01a-BNT04-octopus",
+        "prompt": "octopus",
+        "actual": "AA K T AH P UH S",
+        "prediction": "AA K  T AH P UH S"
+    },
+    {
+        "id": "BU01a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N CH",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "BU01a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "K AA L G EY N OW",
+        "prediction": "V AA L  G EY N OW"
+    },
+    {
+        "id": "BU01a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "K AH N UW",
+        "prediction": "K AH M UW N"
+    },
+    {
+        "id": "BU01a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "W UH D CH AH K",
+        "prediction": "IY CH AH K"
+    },
+    {
+        "id": "BU01a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE S T IH K",
+        "prediction": "HH  AE S  T IH K"
+    },
+    {
+        "id": "BU01a-BNT10-hammock",
+        "prompt": "hammock",
+        "actual": "HH AE M AH K",
+        "prediction": "HH  AE M AH K"
+    },
+    {
+        "id": "BU01a-BNT11-stethoscope",
+        "prompt": "stethoscope",
+        "actual": "S K OW P",
+        "prediction": "S  K OW P"
+    },
+    {
+        "id": "BU01a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "IH N D AH K OY N",
+        "prediction": "Y UW N IH K AO R  N"
+    },
+    {
+        "id": "BU01a-BNT13-tripod",
+        "prompt": "tripod",
+        "actual": "T R AY P AA D",
+        "prediction": "T  R AY P AA D"
+    },
+    {
+        "id": "BU01a-BNT14-sphinx",
+        "prompt": "sphinx",
+        "actual": "S IH NG K S",
+        "prediction": "F IH NG K  S"
+    },
+    {
+        "id": "BU01a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "P AE L AH T",
+        "prediction": "P  AE L T"
+    },
+    {
+        "id": "BU01a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "JH EH L EY JH EH N AH L M AH N IH Z AH HH IY Z K AH DX IH NG AH M P EY P ER AA N DH IY S IH Z ER Z",
+        "prediction": "JH EH L AH JH EH L AH  M AH N IH Z AH HH IY Z  K AH DX IH NG AH P EY P ER AA N DH IY S IH Z ER Z"
+    },
+    {
+        "id": "BU01a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "DH EY G AY IH Z B AA R K IH NG HH IH Z N OW AE T DH AH D AA G",
+        "prediction": "DH AH G AY Z  B AA R  K IH NG IH N  HH  AE AH V DH AH D AO G"
+    },
+    {
+        "id": "BU01a-VNT03-put",
+        "prompt": "put",
+        "actual": "HH IY IH Z AH P UH DX IH NG EY B AA K S IH N T AH DH AH SH EH L F",
+        "prediction": "HH IY IH Z AH P UH DX IH NG EY B AA CH IH N T UW DH AH SH EH L  F"
+    },
+    {
+        "id": "BU01a-VNT04-send",
+        "prompt": "send",
+        "actual": "AH DH AH G AY Z G IH V IH NG V AE L AH N T AY N Z T UW HH IH Z S W IY T HH AA R T",
+        "prediction": "AH M DH AH G AY  G IH V IH NG M EH L AH N T  T AY M Z Z  D UW IH Z  Z  L IY DH  AE T"
+    },
+    {
+        "id": "BU01a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "AH M G AY IH Z D R AY V IH NG D R AY V IH NG HH IH Z K AA R",
+        "prediction": "AH M  AY W AH Z  D  R AY V IH NG F  R AY V DH EY R  K AA IH NG"
+    },
+    {
+        "id": "BU01a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "HH IY Z AH <sil> HH IY Z W AA SH IH NG DH AH DH AH W EH L HH IY Z W AA SH IH NG HH IY Z W AA SH IH NG DH AH",
+        "prediction": "HH IY Z AH HH IY Z  W AA SH IH NG DH AH W R HH IY Z  W AA SH IH NG HH IH Z  W AA CH IH NG W AH"
+    },
+    {
+        "id": "BU01a-VNT07-read",
+        "prompt": "read",
+        "actual": "AH HH IY Z AH R IY S AY DX IH NG AH B UH K <sil> R AY DX IH NG AO R R IY S AY DX IH NG EY B UH K",
+        "prediction": "AH HH IY Z AH R IY S AY DX IH NG DH AH B AO R  F  R AY IY F AH R R  S AY DX IH NG K AH L"
+    },
+    {
+        "id": "BU01a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "AH M HH IY Z L AE F IH NG HH IY Z L UH K AH N L AE F AH N L AE F IH NG",
+        "prediction": "AH M HH IY Z  L  AE F IH NG IH  L AH D  L IY L  AE F IH NG"
+    },
+    {
+        "id": "BU01a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "HH IY Z W AA CH IH NG T IY V IY <sil> DH EY D AA G IH Z W AA CH IH NG DH AH T IY V IY",
+        "prediction": "HH IY Z  W AA CH IH NG K IY V IY DH AH D AA G IH Z  W AA CH IH NG T IY"
+    },
+    {
+        "id": "BU01a-VNT10-give",
+        "prompt": "give",
+        "actual": "AH M DH AH DH IY W UH M AH N IH Z G IH V IH NG EY G IH F T T UW DH AH S AH N M EY B IY",
+        "prediction": "AH M DH AH DH IY W UH M  AE N IH Z  G IH V IH NG AH G IH F F  T  T UW DH IH T  S AH G AH"
+    },
+    {
+        "id": "BU01a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "AH S W IH M IH NG",
+        "prediction": "AH S  W IH M IH NG"
+    },
+    {
+        "id": "BU01a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "AH S T ER IH NG",
+        "prediction": "AH S  T ER IH NG"
+    },
+    {
+        "id": "BU01a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "P IH N CH IH NG",
+        "prediction": "P IH N CH IH NG"
+    },
+    {
+        "id": "BU01a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "K R AA L IH NG",
+        "prediction": "K  R AA L IH NG"
+    },
+    {
+        "id": "BU01a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "AH D AH L IH V ER IH NG",
+        "prediction": "AH M  D AH L IH V ER IH NG"
+    },
+    {
+        "id": "BU01a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "AH P AO R IH NG",
+        "prediction": "AH M P AO R IH NG"
+    },
+    {
+        "id": "BU01a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "<sil> HH AW L IH NG",
+        "prediction": "HH AW L IH NG"
+    },
+    {
+        "id": "BU01a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "AH D R AH D R AA P IH NG AH AO R P L EY IH NG W IH DH AH B AA L D R AA P S N OW HH IY HH IY HH IY HH IY W AA N HH IY D AH Z HH IY HH IY P L EY P L EY IH NG P L EY IH NG W IH DH DH AH B AA L",
+        "prediction": "AH M D R AH M D  R AA P IH NG AH AO R P  L EY W IH T DH DH AH B AA L  R AH P  S  N AA T HH IY HH IY HH IY HH IY W AA T HH IY D AH Z HH IY Z HH W EY IH NG K  L IY NG  L EY IH NG W IH DH DH AH B AA L"
+    },
+    {
+        "id": "BU01a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "B AY DX IH NG DH AH K AE T",
+        "prediction": "B L AY IH DH AH K  AE T"
+    },
+    {
+        "id": "BU01a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "AH P UH SH IH NG P UH SH IH NG",
+        "prediction": "AH M  P UH SH IH NG P UH SH IH NG"
+    },
+    {
+        "id": "BU01a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "AH AH T IH K AH L IH NG",
+        "prediction": "AH AH T IH K AH L IH NG"
+    },
+    {
+        "id": "BU01a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "SH IY R IH NG AH M S EY V SH EY V IH NG SH EY V IH NG",
+        "prediction": "SH IY R AH M  SH EY V G EY V IH NG SH EY V IH NG"
+    },
+    {
+        "id": "scale31a-BNT01-house",
+        "prompt": "house",
+        "actual": "AH R UW M",
+        "prediction": "AH M IH"
+    },
+    {
+        "id": "scale31a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "AH R UW M",
+        "prediction": "R UW L"
+    },
+    {
+        "id": "scale31a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "DH AE T S AH R UW M",
+        "prediction": "AE T  S AH T W UW M"
+    },
+    {
+        "id": "scale31a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "AH R UW M",
+        "prediction": "AH M UW N"
+    },
+    {
+        "id": "scale31a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "T EY B AH L",
+        "prediction": "T EY B AH L"
+    },
+    {
+        "id": "scale31a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "HH IY T AA K S T UW <sil> P AW D ER S K IH N P AW ER DH AE T IH Z S HH IY IH Z <sil> HH IY Z HH IY IH Z HH IY Z K AO T AY M IY N",
+        "prediction": "Y  AE Z OW Z  T UW AW W AY S AW M HH AW DH IH T  AE S  S  HH IY Z  HH IY  HH IY IH Z HH IY IH Z  K W AA R  AY M IY N"
+    },
+    {
+        "id": "scale31a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "HH IY IH Z G R AW L IH NG HH IY IH Z",
+        "prediction": "HH IY IY IH Z  G  R  AE L IH NG HH IY IH Z"
+    },
+    {
+        "id": "scale31a-VNT03-put",
+        "prompt": "put",
+        "actual": "HH IY Z P UH T IH T D AW N",
+        "prediction": "HH IY Z  P UH DX IH NG D AW N"
+    },
+    {
+        "id": "scale31a-VNT04-send",
+        "prompt": "send",
+        "actual": "HH IY Z G AH N AH T EH L HH ER AE N D G IH V HH ER AH AH HH IY Z G OW IH NG T UW P UH T AH G ER L IH N AH IH N AH T AA IH N HH IH Z TH IH NG HH ER S AH P UH T S ER HH IY D AH Z AH N T Z W AA N B AH T HH IY W AA N T T AH S EH L HH ER",
+        "prediction": "HH IY G AA DX IH N D AW N R AY G IH V ER AH AH M HH IY G OW N  T UW P UH T AH G ER L  D EY G IH DH  AE IH T IH Z  N  AE N Y ER S P W P S ER HH IY G AA IH N HH IH Z  W AH N  AH D HH IY W AA N  T AH S EY"
+    },
+    {
+        "id": "scale31a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "HH IY IH Z HH IY IH Z HH IY IH Z <sil> HH IY IH Z EY <sil> OW M AE N HH IY HH IY IH Z M M M",
+        "prediction": "HH IY Z HH IY IH Z HH IY IH Z  HH IY DH EY M HH IY IY  M  M"
+    },
+    {
+        "id": "scale31a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "HH IY IH Z HH IY IH Z D UW <sil> HH IY W AH Z IY DX IH NG DH AH IY DX IH NG AH AY M IY N DH AH",
+        "prediction": "HH IY IH Z HH IY Z CH IY HH IY  W AH L IY V IY DH AH IY V IH NG AH AH M DH AH UH"
+    },
+    {
+        "id": "scale31a-VNT07-read",
+        "prompt": "read",
+        "actual": "T AA K IH NG T UW IH M",
+        "prediction": "T AA K  Y AH T UW M"
+    },
+    {
+        "id": "scale31a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "HH IY DH EY",
+        "prediction": "HH IY V  AE N IY"
+    },
+    {
+        "id": "scale31a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "L UH K IH N AE T DH AH IH NG IH NG N IY S HH IY AA R",
+        "prediction": "L UH K IH N AW T DH AH M IY N DH IY Z IY AA R"
+    },
+    {
+        "id": "scale31a-VNT10-give",
+        "prompt": "give",
+        "actual": "SH IY Z G IH V IH N HH IH M W AH N",
+        "prediction": "SH IY G IH IH NG HH AO R N"
+    },
+    {
+        "id": "scale31a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "S W IH M IH N",
+        "prediction": "S  W IH M IH NG"
+    },
+    {
+        "id": "scale31a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "SH IY IH Z",
+        "prediction": "SH IY Z"
+    },
+    {
+        "id": "scale31a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "AW",
+        "prediction": "HH AW L"
+    },
+    {
+        "id": "scale31a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "B EY B IY SH OW M IY SH IY IH Z SH IY IH Z T UW",
+        "prediction": "B EY B IY SH AH  M IY SH IY IH Z  SH Y  AE N N T IH UW"
+    },
+    {
+        "id": "scale31a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "HH IY G AA T S AH M HH IY HH AE Z S AH M R UW M HH IH Z R UW M R EH Z IH Z HH IH Z IH Z T IH T S HH IH Z IH T S HH ER Z IH T S HH ER TH IH NG G IH V IH N T UW T IY NG K AH V HH IH Z HH IY IH Z T EH L IH NG HH IH M T UW <sil> TH EY NG K Y UW",
+        "prediction": "HH IY G AA T  S AH M Y IH EH AH M  R UW L  HH IH Z  R UW IH IH Z  HH IH Z IH Z JH IH S HH IH IH T  S HH ER S HH IH Z HH EY R Z  T IY G IH V IH N DH IY T UW TH IH G AA HH IY HH IY IH Z  T AH IH DH AH N  T UW  T  AE NG K IH NG"
+    },
+    {
+        "id": "scale31a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "HH IY AH HH IY IH Z T AA K IH NG T AH DH EH M T UW AH HH IY AH T IY AH T UW T M",
+        "prediction": "HH IY AH HH IY IH Z  T AA K IH NG DH AH M  T UW AH HH IY AH T IY AH JH UW T N"
+    },
+    {
+        "id": "scale31a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "SH IY AH L IH S HH IY Z N AA T L IH S N IH NG B AH T HH IY IH Z",
+        "prediction": "HH IY Z AH L IH S DH HH IY  N AA T L IH S  N IH NG B AH T HH IY IH Z"
+    },
+    {
+        "id": "scale31a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "SH IY B AY T IH M",
+        "prediction": "SH IY Z  B AY DX IH N"
+    },
+    {
+        "id": "scale31a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "HH IY L AE F IH NG",
+        "prediction": "HH IY Z L  AE F IH NG"
+    },
+    {
+        "id": "tap11a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "S W AA L",
+        "prediction": "S  W AO L"
+    },
+    {
+        "id": "tap11a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "P IH CH",
+        "prediction": "P IH N CH"
+    },
+    {
+        "id": "tap11a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "K AA L K EY M EH L",
+        "prediction": "K AA R  K EY M IH N"
+    },
+    {
+        "id": "tap11a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "B OW T",
+        "prediction": "B  R AY T"
+    },
+    {
+        "id": "tap11a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "P R AE T UW S",
+        "prediction": "R  AE T AH S"
+    },
+    {
+        "id": "tap11a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "Y EH S",
+        "prediction": "G EH S"
+    },
+    {
+        "id": "tap11a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "B AA R K IH NG",
+        "prediction": "B AA R  K IH NG"
+    },
+    {
+        "id": "tap11a-VNT03-put",
+        "prompt": "put",
+        "actual": "W EY IH T",
+        "prediction": "W EY"
+    },
+    {
+        "id": "tap11a-VNT04-send",
+        "prompt": "send",
+        "actual": "R IY D IH T Y EH S B OW",
+        "prediction": "R IY D IH Y EH S  F R OW"
+    },
+    {
+        "id": "tap11a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "R AY V IH N",
+        "prediction": "D  R AY V IH N"
+    },
+    {
+        "id": "tap11a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "W AA N D ER IY",
+        "prediction": "W R AA  D ER IH IY"
+    },
+    {
+        "id": "tap11a-VNT07-read",
+        "prompt": "read",
+        "actual": "R IY D IH NG",
+        "prediction": "R IY D IH NG"
+    },
+    {
+        "id": "tap11a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "L AE F IH N",
+        "prediction": "L AY F IH NG"
+    },
+    {
+        "id": "tap11a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "Y EH S AH <spn>",
+        "prediction": "Y EH S  AH"
+    },
+    {
+        "id": "tap11a-VNT10-give",
+        "prompt": "give",
+        "actual": "P R IH DX IY",
+        "prediction": "P  R IH DX IY"
+    },
+    {
+        "id": "tap11a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "S W IH M IH N",
+        "prediction": "S  W IH M"
+    },
+    {
+        "id": "tap11a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "CH IY",
+        "prediction": "CH IH NG"
+    },
+    {
+        "id": "tap11a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "OW OW M AY <spn> <sil> SH Y EH S Y EH S Y EH S",
+        "prediction": "OW OW M AY  S  Y EH S  Y EH S  Y EH S"
+    },
+    {
+        "id": "tap11a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "K AO L",
+        "prediction": "K OW L"
+    },
+    {
+        "id": "tap11a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "Y EH S OW Y EH S K AH M OW N AE N M AH M",
+        "prediction": "Y EH S OW Y EH S  K AH M OW N  AE N M  M AW M"
+    },
+    {
+        "id": "tap11a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "TH AE NG K Y UW",
+        "prediction": "TH  AE NG K  Y UW"
+    },
+    {
+        "id": "tap11a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "HH EH L <sil> T K AO R D",
+        "prediction": "V OW T  K AO R  N"
+    },
+    {
+        "id": "tap11a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "M AY G UH D",
+        "prediction": "M AA G IH D"
+    },
+    {
+        "id": "tap11a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "Y EH S N AA T G UH D",
+        "prediction": "Y EH S  N AA  G IH D"
+    },
+    {
+        "id": "tap11a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "CH UH K IH N AH M <sil> S Y EH S",
+        "prediction": "CH IH K IH N IH N  Y EH S"
+    },
+    {
+        "id": "tap11a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "P R EY V IH NG Y EH S",
+        "prediction": "P  R EY V IH NG Y EH S"
+    },
+    {
+        "id": "thompson04a-BNT01-house",
+        "prompt": "house",
+        "actual": "T IH T S HH AW S",
+        "prediction": "SH IY S HH AW S"
+    },
+    {
+        "id": "thompson04a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "AA R  K AH IH NG"
+    },
+    {
+        "id": "thompson04a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "T UW TH B R AH SH",
+        "prediction": "T UW TH B  R AH SH"
+    },
+    {
+        "id": "thompson04a-BNT04-octopus",
+        "prompt": "octopus",
+        "actual": "S K W IH D",
+        "prediction": "S  K  W IH D"
+    },
+    {
+        "id": "thompson04a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N CH",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "thompson04a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "V AA L K EY N OW",
+        "prediction": "V AA L  K EY N OW"
+    },
+    {
+        "id": "thompson04a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "K AH N UW",
+        "prediction": "K AH N UW"
+    },
+    {
+        "id": "thompson04a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "OW DH AH DH AE T S AH W IY Z AH L",
+        "prediction": "OW B AH AH T DH IH S IH Z R IY Z AH L"
+    },
+    {
+        "id": "thompson04a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE K T AH S",
+        "prediction": "K  AE K  T AH S"
+    },
+    {
+        "id": "thompson04a-BNT11-stethoscope",
+        "prompt": "stethoscope",
+        "actual": "DH EH S K OW P S EH P S EH T S AH S EH S S S",
+        "prediction": "TH EH S  K OW P  S EH S EH S AH S  P EH S  S  S  T"
+    },
+    {
+        "id": "thompson04a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "HH AO R S",
+        "prediction": "HH AO R  S"
+    },
+    {
+        "id": "thompson04a-BNT13-tripod",
+        "prompt": "tripod",
+        "actual": "K AE M R AH",
+        "prediction": "K EY R R OW"
+    },
+    {
+        "id": "thompson04a-BNT14-sphinx",
+        "prompt": "sphinx",
+        "actual": "S P IH NG K",
+        "prediction": "S  F EY NG K"
+    },
+    {
+        "id": "thompson04a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "AH IY Z AH L",
+        "prediction": "IY Z AH L"
+    },
+    {
+        "id": "thompson04a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "K AH DX IH NG",
+        "prediction": "K AH DX IH NG"
+    },
+    {
+        "id": "thompson04a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "D AA R K N OW AH AH AH M B AA R K",
+        "prediction": "D AA G  N OW AH AH AH M  B AA R  K"
+    },
+    {
+        "id": "thompson04a-VNT03-put",
+        "prompt": "put",
+        "actual": "W EH L B IY K AH Z B IY K AH Z <sil> AY M IY N DH IH S IH Z <sil> AY D OW N T S IY W AH T Y ER D UW IH NG AA N DH IH S <sil> AY D OW N T S IY DH AE T",
+        "prediction": "W AH HH IY K AH Z Z B IY K AH Z  AY M IY N DH IH S S  AY D OW N  T AH S IY W AH JH UW D UW IH NG OW DH IH S  AY D OW N  T  S IY DH  AE T"
+    },
+    {
+        "id": "thompson04a-VNT04-send",
+        "prompt": "send",
+        "actual": "K AH Z DH AE T S AH G UH D TH IH NG B IY K AH Z IH T S DH AE T S CH OW DH AE T S R AO NG",
+        "prediction": "K AH Z DH  AE T  S AH G UH D Z IH DX D IH NG B IY K AH Z HH IH Z T IH N T  S SH OW DH  AE T  S  R AO L"
+    },
+    {
+        "id": "thompson04a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "W EH L HH IY Z D R AY V IH N AH K AA R",
+        "prediction": "W AH IH Z  D  R AY V IH N AH K AA R"
+    },
+    {
+        "id": "thompson04a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "D UH Z IH NG D IH SH IH NG W AO R SH IH NG W AO R SH IH NG D IH SH AH Z",
+        "prediction": "IH Z HH IY D IH SH IH NG W AO R SH IH NG W AO R SH IH NG D IH SH AH Z"
+    },
+    {
+        "id": "thompson04a-VNT07-read",
+        "prompt": "read",
+        "actual": "DH AE T S W AH T HH IY IH Z HH IY W AH Z IH CH IH NG N OW N OW",
+        "prediction": "DH  AE S  W AH T HH IY IH Z IH Z  P IH N CH IH NG N OW G OW"
+    },
+    {
+        "id": "thompson04a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "W AH T IH Z IH T D UW IH NG HH IY R HH AH <sil> W EH L HH IY Z HH IY Z D AH D R AY V HH IY Z HH IY Z HH IY Z AH AH D R AY V IH NG N OW N OW HH IY Z HH IY Z L AE F IH NG",
+        "prediction": "W AH T IH Z HH IH D UW IH NG DH IY R  W AH L HH IY Z HH IY Z  T D  R AY IH S SH IY IH Z AH AH D  R AY V IH NG N OW N OW HH IY Z HH IY Z  L  AE F IH NG"
+    },
+    {
+        "id": "thompson04a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "B AH T DH AE T S DH IY OW N L IY TH IH NG AY K AE N S EY IH T IH Z IH Z EY AH L AE F IH NG M AO R N IH NG N OW K EY AH AH <sil> OW HH IY Z G AA T IH T HH EY HH EY NG G ER",
+        "prediction": "B AH T DH  AE T  S HH IY W AH DH IY AY K AH S IH T IH Z IH Z EY AH  L  AE F IH NG B AO R D IY N OW K  AE AH IH AH OW HH IY Z  G AA T IH EY EY NG G ER"
+    },
+    {
+        "id": "thompson04a-VNT10-give",
+        "prompt": "give",
+        "actual": "P AE K IH JH IH NG",
+        "prediction": "P  AE K IH JH IH"
+    },
+    {
+        "id": "thompson04a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "S W IH M IH NG",
+        "prediction": "S  W IH M IH NG"
+    },
+    {
+        "id": "thompson04a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "S T ER IH NG",
+        "prediction": "S  T ER IH NG"
+    },
+    {
+        "id": "thompson04a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "P IH N CH IH NG",
+        "prediction": "P IH N CH IH NG"
+    },
+    {
+        "id": "thompson04a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "K R AO L IH NG",
+        "prediction": "K  R AA L IH NG"
+    },
+    {
+        "id": "thompson04a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "P AE K IH JH IH NG",
+        "prediction": "P  AE P IH N JH IH"
+    },
+    {
+        "id": "thompson04a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "P AO R IH NG",
+        "prediction": "AH HH AO R"
+    },
+    {
+        "id": "thompson04a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "AH HH AW L IH NG",
+        "prediction": "AH HH AW L IH NG"
+    },
+    {
+        "id": "thompson04a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "Y UW G EH T AH <sil> B AO L B AO L L AH T S G OW W IH TH DH AE T D UW DH AH B AO L Y EH S",
+        "prediction": "Y UW F AH K EH T AH  B UW L  OY L  W AH EH T S  G OW W AH Z DH  AE D UW IH  B AO L EH"
+    },
+    {
+        "id": "thompson04a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "EY NG G ER",
+        "prediction": "B EY V ER"
+    },
+    {
+        "id": "thompson04a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "SH AH V IH NG",
+        "prediction": "SH AH V IH NG"
+    },
+    {
+        "id": "thompson04a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "L AE F D ER",
+        "prediction": "W  AE CH ER"
+    },
+    {
+        "id": "thompson04a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "SH EY V IH NG",
+        "prediction": "SH EY V IH NG"
+    },
+    {
+        "id": "tucson15a-BNT01-house",
+        "prompt": "house",
+        "actual": "B AH M UW N",
+        "prediction": "B OW IH AH M AO R N"
+    },
+    {
+        "id": "tucson15a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "K OW M"
+    },
+    {
+        "id": "tucson15a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "B R AH SH",
+        "prediction": "B  R AH SH"
+    },
+    {
+        "id": "tucson15a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "tucson15a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "B AE K T IH R IY Y IH D",
+        "prediction": "V AH CH IH R IY IH D"
+    },
+    {
+        "id": "tucson15a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "IH T S AH S AH N UW",
+        "prediction": "IH T  S AH SH AH N OW"
+    },
+    {
+        "id": "tucson15a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "B ER D",
+        "prediction": "B ER D"
+    },
+    {
+        "id": "tucson15a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE K T AH S",
+        "prediction": "T  AE K  T AH S"
+    },
+    {
+        "id": "tucson15a-BNT10-hammock",
+        "prompt": "hammock",
+        "actual": "S W IH NG Z S Z",
+        "prediction": "S  W IH NG IH SH AH Z"
+    },
+    {
+        "id": "tucson15a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "B AE DX ER IY",
+        "prediction": "V EY R IY"
+    },
+    {
+        "id": "tucson15a-BNT13-tripod",
+        "prompt": "tripod",
+        "actual": "P L IY Z",
+        "prediction": "P  R IY D IH Z"
+    },
+    {
+        "id": "tucson15a-BNT14-sphinx",
+        "prompt": "sphinx",
+        "actual": "K IH NG",
+        "prediction": "K EY NG"
+    },
+    {
+        "id": "tucson15a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "P AE L AH T",
+        "prediction": "P  AE L AH T"
+    },
+    {
+        "id": "tucson15a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "K AH T",
+        "prediction": "K AH T"
+    },
+    {
+        "id": "tucson15a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "T AA K AA K T AH HH IH M W AH T K AA F AH HH IH M K AA R K AA R",
+        "prediction": "G AA K AA K IH NG HH IH M  W AH K  K AA  F ER IH  K AA R  K AH"
+    },
+    {
+        "id": "tucson15a-VNT03-put",
+        "prompt": "put",
+        "actual": "HH IY T EY K S <sil> IH T D AW N HH IY R",
+        "prediction": "HH IY T IY SH IH T  S  D AW N HH IY R"
+    },
+    {
+        "id": "tucson15a-VNT04-send",
+        "prompt": "send",
+        "actual": "HH EH L EH L V IH V EY R IY G UH D S EH N T AH HH ER HH IY Z M EY R M EY R Z S IH S M EY R M EY L IH",
+        "prediction": "HH AW IH B EY R IY G UH D IH Z IH N  T AH HH ER HH IH Z  M EY R  M EY R  SH IH Z M EY R  M EY L IH NG"
+    },
+    {
+        "id": "tucson15a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "HH IY Z G AA DX AH B AY B AY W EY <sil> Y AE Y UW S IY AH M",
+        "prediction": "HH IY Z  G AA DX AH B AY L AY W EY Y  AE Y S IY  AE"
+    },
+    {
+        "id": "tucson15a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "W AA SH IH S",
+        "prediction": "W AA SH IH Z"
+    },
+    {
+        "id": "tucson15a-VNT07-read",
+        "prompt": "read",
+        "actual": "P EY M P P IH S W IY W EY R W IY W AH Z HH IY R R IY D AH M",
+        "prediction": "P EY B  B IH S SH W IY W EY R UH SH IY R  W R IY D NG"
+    },
+    {
+        "id": "tucson15a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "OW HH IY Z V EY R IY HH AE P IY HH AE P IY",
+        "prediction": "OW SH IY Z V EY R IY HH  AE P IY HH  AE P IY"
+    },
+    {
+        "id": "tucson15a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "K AE T W AA N T Z T AH S EY M G AA CH AH",
+        "prediction": "K  AE T N UH SH IY SH EY AH N  K AH CH IH"
+    },
+    {
+        "id": "tucson15a-VNT10-give",
+        "prompt": "give",
+        "actual": "DH IH S T EY K IH T P EY S P IY Z HH IY R DH AH HH IY HH AE D AE N D HH IY G IH V Z T AH HH ER N AY S",
+        "prediction": "DH IH S  T EY K IH N P EY IH Z HH IY R EY HH IY  AE N  D  AE N  HH IY G IH S  T AH HH IY R N EY D"
+    },
+    {
+        "id": "tucson15a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "W IH N S AH S AY <spn> EH N IY W EY R G AY AH M AH IH N DH AH K AA R <spn> IH N D CH AH K AA R",
+        "prediction": "W IH N G AA AH S AY  AE N  D IY DH EY ER G AY AH M  Y  AE IH N IY T  R AY M IH P IH N CH"
+    },
+    {
+        "id": "tucson15a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "OW DH IH S IH Z N AY S D R IH NG K S IY HH IY D R IH NG K IH NG F OW SH IY N B AH T DH AH HH ER M IH K S AH M AH P AE N D HH IY Z P AE S AH M AW T T AH EH V R IY B AH D IY",
+        "prediction": "OW DH IH S IH Z  N AY S  D  R IH NG K  NG IH NG SH IY D  R IH K IH NG  R IH M IH NG P IH N TH AH HH R HH AH M EY K  S AH M AH P  AE N D SH  P EH S  AH N AY D IH AY"
+    },
+    {
+        "id": "tucson15a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "HH IY Z P IH N CH HH ER",
+        "prediction": "HH IY Z  P IH N CH EY R"
+    },
+    {
+        "id": "tucson15a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "SH IY Z W EY IH N IH N D AH R EY T AH T R AY IH T AH W EY",
+        "prediction": "SH IY Z AH  W AH IH N R IY T  R AY Z AH W EY"
+    },
+    {
+        "id": "tucson15a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "W EH L DH AH P IY S K AH M Z F R AH M HH IY R T AH HH IH M AE N F R AH M DH AH F EY AH S F R AH M F EY HH IH S AE N AE N HH IY D UW AH T",
+        "prediction": "W AH DH AH P IY S  G AA NG K  SH AO R HH IY R K EY HH IH M IH T  F  R AH M IH N DH AH F  R EY AO R DH AH P  R EY HH IY Z HH IH NG IH AH N HH IY D OW AH K T"
+    },
+    {
+        "id": "tucson15a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "F R AH M DH AH P AO R IH T IH N HH IY R IY N AY S R IH V ER R EY N D EH N HH IY R",
+        "prediction": "AE N DH EY AH IH N HH IY R HH IY N AY S W IH F ER UH SH R IY D IH NG  AE N AH HH IY R"
+    },
+    {
+        "id": "tucson15a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "B AY HH IY T UH K DH IH S AE N D M EY K IH T AE F T ER HH IH M HH IH M N UW Z N UW Z AE T AH M",
+        "prediction": "B AH HH IY T UH K IH NG HH IH Z AY M EY K IH HH  AE F  T ER HH IH M HH  AE M  L UW N Z  L UW S  AE OW"
+    },
+    {
+        "id": "tucson15a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "HH IY Z G AA T DH AH <spn> DH AH B OY <spn> DH AH HH IY HH IY T T EY K S HH IY T EY K S DH AH B AO R B AO R T AH HH IH M AE N SH IY W AA N T S T AH <spn> <spn> D IH S W EH DH ER Y UW G OW",
+        "prediction": "HH IY Z  G AA T IH AH M AH B OY D IH HH IY HH IY JH EY T EY K  S HH IY T EY K IH Z DH AH B AO R V AA R  T AH HH IH M  AE N SH IY W AA T SH AH IH K EH S HH  W EH L DH EY R  Z  N UH P"
+    },
+    {
+        "id": "tucson15a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "K L IH P S HH IH M K L AE P S AH M AE N HH IY S EH Z G UH D",
+        "prediction": "K  L IH P SH IH N  G K  L AA S N IY SH IY Z  G IH V IH D IH NG N"
+    },
+    {
+        "id": "tucson15a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "L EH T S G OW AH W EY G EH AH W EY",
+        "prediction": "DH EY R  K OW AH W EY G OW DX AH W EY"
+    },
+    {
+        "id": "tucson15a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "SH IY Z JH AH G AA T DH EH M AA L AA N DH AH S N EY K S <spn> T T AH D EH G S Y AE HH IY S EH Z HH IY S EH Z SH IY G AA DX AH M AA N",
+        "prediction": "SH IY Z  G AA G AA CH HH IH M OW AH N AH S  M EY K  S T CH D IH K  S  Y EH AY TH IH NG HH IY S AH S  G AA DX AH V AH"
+    },
+    {
+        "id": "tucson15a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "K L IY N <spn> D IH G ER <spn> <sil> G AY AH HH IY L EY D <sil> L IY S AE N L EY Y AE HH IY Z N AY S",
+        "prediction": "K AH L IY IH NG OW G  D IH K ER N OW G AY AH HH IY L D  DH IY S IH N EY D Y  AE HH IY  N AY"
+    },
+    {
+        "id": "tucson22a-BNT01-house",
+        "prompt": "house",
+        "actual": "HH AW S",
+        "prediction": "AH HH AW S"
+    },
+    {
+        "id": "tucson22a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "K OW M"
+    },
+    {
+        "id": "tucson22a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "T UW TH R AH SH",
+        "prediction": "T UW TH TH R AH SH"
+    },
+    {
+        "id": "tucson22a-BNT04-octopus",
+        "prompt": "octopus",
+        "actual": "K AA P T AH P UH S",
+        "prediction": "K AA K  T AH P UH S"
+    },
+    {
+        "id": "tucson22a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N CH",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "tucson22a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "V AA L K EY N OW",
+        "prediction": "V AA L  K EY N OW"
+    },
+    {
+        "id": "tucson22a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "B OW T",
+        "prediction": "V OW T"
+    },
+    {
+        "id": "tucson22a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "AA DX ER",
+        "prediction": "V AA DX ER"
+    },
+    {
+        "id": "tucson22a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "S AH W AA R OW",
+        "prediction": "S AH W AA R L"
+    },
+    {
+        "id": "tucson22a-BNT10-hammock",
+        "prompt": "hammock",
+        "actual": "S W IH NG",
+        "prediction": "S  W IH NG"
+    },
+    {
+        "id": "tucson22a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "EY K AO R N",
+        "prediction": "V AY K AO R  N"
+    },
+    {
+        "id": "tucson22a-BNT14-sphinx",
+        "prompt": "sphinx",
+        "actual": "P IH R AH M IH D",
+        "prediction": "P EY R  N OW"
+    },
+    {
+        "id": "tucson22a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "P EY N T",
+        "prediction": "P EY N  T"
+    },
+    {
+        "id": "tucson22a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "K AH DX IH NG",
+        "prediction": "K AH DX IH NG"
+    },
+    {
+        "id": "tucson22a-VNT03-put",
+        "prompt": "put",
+        "actual": "P UH DX IH NG IH T D AW N",
+        "prediction": "P UH DX IH NG IH T  D AW N"
+    },
+    {
+        "id": "tucson22a-VNT04-send",
+        "prompt": "send",
+        "actual": "M EY L B AA K S IH Z S AH",
+        "prediction": "M EY L  B AA K  S IH Z AH"
+    },
+    {
+        "id": "tucson22a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "D R AY V IH NG",
+        "prediction": "D  R AY V IH NG"
+    },
+    {
+        "id": "tucson22a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "AH M AH T AH N EY IH NG AY M IY N",
+        "prediction": "AH M W AH HH IH DH  AE AY M IY N"
+    },
+    {
+        "id": "tucson22a-VNT07-read",
+        "prompt": "read",
+        "actual": "AH <sil> R IY D IH NG",
+        "prediction": "AH  R IY D IH NG"
+    },
+    {
+        "id": "tucson22a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "L AE F IH NG",
+        "prediction": "L  AE F IH NG"
+    },
+    {
+        "id": "tucson22a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "DH AH K AE T IH Z W AA CH IH NG DH AH D AA G",
+        "prediction": "DH AH K  AE T IH Z  W AA SH IH NG DH AH D AA G"
+    },
+    {
+        "id": "tucson22a-VNT10-give",
+        "prompt": "give",
+        "actual": "P R EH Z IH N T AH M <sil> P R EH Z IH N T",
+        "prediction": "P IH L L IH N  T AH M  P  R EH S Z IH N  T"
+    },
+    {
+        "id": "tucson22a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "S W IH M IH NG",
+        "prediction": "S  W IH IH NG"
+    },
+    {
+        "id": "tucson22a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "AH M <spn> AH M <spn> JH IH AH M",
+        "prediction": "AH M  AH M  JH IY IH N AH M"
+    },
+    {
+        "id": "tucson22a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "P UH SH IH NG N OW P UH L IH NG N OW AH <sil> P R IH N CH P IH N CH IH NG",
+        "prediction": "P UH SH IH NG AH N OW P UH L IH NG M OW W  P IH N CH P IH N CH IH NG"
+    },
+    {
+        "id": "tucson22a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "DH AH B EY B IY IH Z K AO L K AO L IH NG K AO <sil> DH AH B EY B IY IH Z K R AO L IH NG",
+        "prediction": "DH AH B EY B IY IH Z  K AA L  K AO L IH NG K AO DH AH B EY B IY IH Z  K  R AO L IH NG"
+    },
+    {
+        "id": "tucson22a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "DH AH P AE K IH JH IH Z D AH L IH V ER IH NG",
+        "prediction": "DH AH P  AE K IH JH IH Z  D AH L IH V ER IH NG"
+    },
+    {
+        "id": "tucson22a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "D R IH NG K IH NG AH M",
+        "prediction": "D  R IH NG K IH NG AH M"
+    },
+    {
+        "id": "tucson22a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "<sil> N AY M UW N AH M <sil> AH HH AW L IH NG",
+        "prediction": "L AY M EY R AO  N OW AH M AH HH AW L IH NG"
+    },
+    {
+        "id": "tucson22a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "IH S TH R OW IH NG",
+        "prediction": "HH IY Z TH R OW IH NG"
+    },
+    {
+        "id": "tucson22a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "HH AE P AO R D AA G IH Z B IH AH N",
+        "prediction": "AH HH AA P AO R  D AA G IH Z  B EH IH N"
+    },
+    {
+        "id": "tucson22a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "F R IH SH IH NG",
+        "prediction": "P UH SH IH NG"
+    },
+    {
+        "id": "tucson22a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "P K UW CH IH K AH L IH NG",
+        "prediction": "K UW CH IH K AH L IH NG"
+    },
+    {
+        "id": "tucson22a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "M AH SH OW AH M <spn> <sil> B R EY Z ER B L EY D Z AH M <sil> P R IY SH R AH",
+        "prediction": "R AH SH OW AH M AH  B  R EY Z Z ER B EH L EY D  AH M  P P  SH  R W EH"
+    },
+    {
+        "id": "whiteside06a-BNT01-house",
+        "prompt": "house",
+        "actual": "AH T UW S T AO R IY HH AW S",
+        "prediction": "AH T UW TH S  T ER HH AW S"
+    },
+    {
+        "id": "whiteside06a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "K OW M"
+    },
+    {
+        "id": "whiteside06a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "B R AH SH",
+        "prediction": "R AH SH"
+    },
+    {
+        "id": "whiteside06a-BNT04-octopus",
+        "prompt": "octopus",
+        "actual": "AA K T OW P UH S",
+        "prediction": "AA K  T AH P UH S"
+    },
+    {
+        "id": "whiteside06a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N CH",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "whiteside06a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "V AA L K EY N OW",
+        "prediction": "V AA L  K EY N OW"
+    },
+    {
+        "id": "whiteside06a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "B OW T",
+        "prediction": "F OW Z"
+    },
+    {
+        "id": "whiteside06a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE K T AH S",
+        "prediction": "K  AE K  T AH S"
+    },
+    {
+        "id": "whiteside06a-BNT11-stethoscope",
+        "prompt": "stethoscope",
+        "actual": "S T EH TH AH S K OW P",
+        "prediction": "S  T EH L TH AH S  K OW P"
+    },
+    {
+        "id": "whiteside06a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "AE N T AH L ER",
+        "prediction": "K  AE N  T  L ER"
+    },
+    {
+        "id": "whiteside06a-BNT13-tripod",
+        "prompt": "tripod",
+        "actual": "K AE M R AH",
+        "prediction": "K  AE M  R AH"
+    },
+    {
+        "id": "whiteside06a-BNT14-sphinx",
+        "prompt": "sphinx",
+        "actual": "S F IH NG K S",
+        "prediction": "S  F IH NG K  S"
+    },
+    {
+        "id": "whiteside06a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "HH AE N D AH L Z",
+        "prediction": "HH  AE N  D AH L  S"
+    },
+    {
+        "id": "whiteside06a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "K AH DX IH NG AH P AH P EY P ER",
+        "prediction": "K AH DX IH NG AH P AH P EY P ER"
+    },
+    {
+        "id": "whiteside06a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "AH B AA R K",
+        "prediction": "AH B AA R  K"
+    },
+    {
+        "id": "whiteside06a-VNT03-put",
+        "prompt": "put",
+        "actual": "S IH DX IH NG D AW N",
+        "prediction": "S EH DX IH NG D AW N"
+    },
+    {
+        "id": "whiteside06a-VNT04-send",
+        "prompt": "send",
+        "actual": "AH M D R AA P IH NG AH M EY L B AA K S",
+        "prediction": "AH M  D  R AA P IH NG AH M EY L  B AA K  S"
+    },
+    {
+        "id": "whiteside06a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "D R AY V IH NG AH W EY",
+        "prediction": "D  R AY V IH NG AH W EY"
+    },
+    {
+        "id": "whiteside06a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "AY TH IH NG K HH IY IH Z W AA SH IH NG AH",
+        "prediction": "EY TH IH NG K HH IY IH Z W AA SH IH NG DH AH"
+    },
+    {
+        "id": "whiteside06a-VNT07-read",
+        "prompt": "read",
+        "actual": "HH IY IH Z S IH NG IH NG",
+        "prediction": "HH IY IH Z  S IH NG IH NG"
+    },
+    {
+        "id": "whiteside06a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "L AE F IH NG",
+        "prediction": "L  AE F IH NG"
+    },
+    {
+        "id": "whiteside06a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "<sil> HH IY IH Z AH M M IH F T",
+        "prediction": "HH IY IH Z AH M IH F  T"
+    },
+    {
+        "id": "whiteside06a-VNT10-give",
+        "prompt": "give",
+        "actual": "HH IY IH Z S W D UW IH NG DH IH S AY M IY N HH AE N D IH NG DH IH S S AH N AA B AH B IH G B AA K S",
+        "prediction": "HH IY Z S  TH R OW IH NG DH IH S  AY M IY N HH  AE N  D IH NG DH IH S S AH N  D AH P P EY G B AA K  S"
+    },
+    {
+        "id": "whiteside06a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "HH IY AH",
+        "prediction": "HH IY AH M"
+    },
+    {
+        "id": "whiteside06a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "AH D <sil> AH AE JH AH T EY T IH NG",
+        "prediction": "AH D  AH M  AE CH AH CH EY DX IH NG"
+    },
+    {
+        "id": "whiteside06a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "P IH N CH",
+        "prediction": "P IH N CH"
+    },
+    {
+        "id": "whiteside06a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "W AA W UW T W AO L IH NG",
+        "prediction": "W AA T  R AA L IH NG"
+    },
+    {
+        "id": "whiteside06a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "HH AE N D IH NG DH AH B AA K S T UW DH AH OW N ER",
+        "prediction": "HH  AE N  D IH NG DH AH B AA K  S  T UW DH AH OW  D ER"
+    },
+    {
+        "id": "whiteside06a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "F AO R IH NG AH D AH P AO R IH NG IH T",
+        "prediction": "F AO AA R IH D P AO R IH NG IH T"
+    },
+    {
+        "id": "whiteside06a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "TH R OW IH NG DH AH B AA L",
+        "prediction": "TH R OW IH NG DH AH B AA L"
+    },
+    {
+        "id": "whiteside06a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "B AY DX IH NG DH AH <spn> HH AE T",
+        "prediction": "B AY DX IH NG DH AH HH  AE AH T"
+    },
+    {
+        "id": "whiteside06a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "HH IY P UH SH AH Z DH IY W AY F",
+        "prediction": "HH IY P UH SH IH Z DH IY W AY T"
+    },
+    {
+        "id": "whiteside06a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "HH IY IH Z T IH K AH L IH NG DH AH W AY F IH Z T IH K AH L IH NG DH AH W AY F N OW DH AH T IH K AH L IH NG DH AH HH AH Z B AH N D",
+        "prediction": "HH IY IH Z  T IH K AH L IH NG DH AH L AY F IH Z IH Z  T IH K AH L IH NG DH AH L AY F  N OW DH EY T IH K AH L IH NG DH AH HH AA Z  P IH N  Z"
+    },
+    {
+        "id": "whiteside06a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "HH IY IH Z SH EY V IH NG",
+        "prediction": "HH IY IH Z SH EY V IH NG"
+    },
+    {
+        "id": "williamson18a-BNT01-house",
+        "prompt": "house",
+        "actual": "AH HH AW S",
+        "prediction": "AH HH AW S"
+    },
+    {
+        "id": "williamson18a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "K OW M"
+    },
+    {
+        "id": "williamson18a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "T UW TH B R AH SH",
+        "prediction": "T UW TH B  R AH SH"
+    },
+    {
+        "id": "williamson18a-BNT04-octopus",
+        "prompt": "octopus",
+        "actual": "AA K T AH P UH S",
+        "prediction": "AA K  T AH P UH S"
+    },
+    {
+        "id": "williamson18a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "AH B EH N CH",
+        "prediction": "AH B EH N CH"
+    },
+    {
+        "id": "williamson18a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "V AA L K AE N OW",
+        "prediction": "V AA L  K  AE N OW"
+    },
+    {
+        "id": "williamson18a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "B OW T",
+        "prediction": "B OW T"
+    },
+    {
+        "id": "williamson18a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "AH B EH N CH",
+        "prediction": "AH B EH N CH"
+    },
+    {
+        "id": "williamson18a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE K T AH S",
+        "prediction": "K  AE K  T AH S"
+    },
+    {
+        "id": "williamson18a-BNT10-hammock",
+        "prompt": "hammock",
+        "actual": "HH AA L AH T",
+        "prediction": "P  AE L AH T"
+    },
+    {
+        "id": "williamson18a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "B AA R M IH D B AA R DH AH D AO G IH Z B AA R IH NG B AA B AA M S IY AY M DH <spn> B AA B IY EY AA R K EY AY EH N JH IY B AA R K IH NG",
+        "prediction": "AA R IH Z  B AA L DH AH D AA G IH Z  B AA R IH NG W B AH T W UH  M S IY  AE M TH B AA R  B IY EY AA R K  AE T  AE N IH N JH IY B AA R  K IH NG"
+    },
+    {
+        "id": "williamson18a-VNT03-put",
+        "prompt": "put",
+        "actual": "<sil> HH IY Z HH OW D IH NG",
+        "prediction": "HH IY Z  HH OW L  D IH NG"
+    },
+    {
+        "id": "williamson18a-VNT04-send",
+        "prompt": "send",
+        "actual": "OW HH IY Z AH B AW T T UW <sil> M EY L",
+        "prediction": "OW HH IY Z AH B AW T AH T UW M EY L"
+    },
+    {
+        "id": "williamson18a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "D R AY V IH NG",
+        "prediction": "D  R AY V IH NG"
+    },
+    {
+        "id": "williamson18a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "W AA SH IH NG",
+        "prediction": "W AA SH IH NG"
+    },
+    {
+        "id": "williamson18a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "M L UH K IH N AE DX AH K AE T T IY V IY",
+        "prediction": "OW L UH K IH N  AE T AH K  AE T  T IY V IY"
+    },
+    {
+        "id": "williamson18a-VNT10-give",
+        "prompt": "give",
+        "actual": "SH IY Z G IH V IH NG",
+        "prediction": "SH IY Z  G IH V IH NG"
+    },
+    {
+        "id": "williamson18a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "K R AO L IH NG",
+        "prediction": "K  R AO L IH NG"
+    },
+    {
+        "id": "williamson18a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "G R AW G R AW L IH NG IH Z <spn> OW G R AW L IH NG IH Z IH T G R AW L N OW G R AW L IH Z AH D AO G M AH DH AH DH DH IH S W AH N AH M <sil> AE T DH AH AH M <sil> HH AW HH AW L",
+        "prediction": "G  R AW L G  R AW L IH NG IH Z  OW  G  R AW L IH NG IH Z AH G  R AW L  N AH G  R AW L IH Z AH D AO G  M DH AH DH IH S  W AH N AH M  AE T DH AH AH M HH AW"
+    },
+    {
+        "id": "williamson18a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "K AE T IH Z B AY DX IH NG",
+        "prediction": "K  AE T IH Z  B AY DX IH NG"
+    },
+    {
+        "id": "williamson18a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "P UH SH IH NG",
+        "prediction": "P UH SH IH NG"
+    },
+    {
+        "id": "williamson18a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "L AE F IH NG",
+        "prediction": "L  AE F IH NG"
+    },
+    {
+        "id": "williamson18a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "SH AW ER N OW N AA T SH AW ER HH IY Z K AH DX IH NG HH IH Z HH EY R HH IH Z N SH EY V IH NG SH EY V IH NG",
+        "prediction": "SH AW L  N OW IH DH  AE T  SH AW ER  HH IY Z  K AH DX IH NG HH IH Z HH EY R HH IH Z  SH EY V IH NG SH EY V IH NG"
+    },
+    {
+        "id": "wozniak02a-BNT01-house",
+        "prompt": "house",
+        "actual": "HH AW S",
+        "prediction": "HH AW S"
+    },
+    {
+        "id": "wozniak02a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "K AO M"
+    },
+    {
+        "id": "wozniak02a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "CH IY K S S P R AW SH",
+        "prediction": "CH IY TH B  R AH SH"
+    },
+    {
+        "id": "wozniak02a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N CH",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "wozniak02a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "B IY V ER",
+        "prediction": "B IY V ER"
+    },
+    {
+        "id": "wozniak02a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE CH ER",
+        "prediction": "K  AE CH ER"
+    },
+    {
+        "id": "wozniak02a-BNT10-hammock",
+        "prompt": "hammock",
+        "actual": "HH AE M AH K",
+        "prediction": "HH  AE M AH K"
+    },
+    {
+        "id": "wozniak02a-BNT11-stethoscope",
+        "prompt": "stethoscope",
+        "actual": "SH UW P ER AH M",
+        "prediction": "SH UW B P  ER AH M"
+    },
+    {
+        "id": "wozniak02a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "Y UW D AH Y UW N AO R N",
+        "prediction": "Y UW N AH Y UW IH N AO R  N"
+    },
+    {
+        "id": "wozniak02a-BNT13-tripod",
+        "prompt": "tripod",
+        "actual": "T R AY B AA G",
+        "prediction": "T  R AY B AA G"
+    },
+    {
+        "id": "wozniak02a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "P AE L AH S",
+        "prediction": "P  AE L AH S"
+    },
+    {
+        "id": "wozniak02a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "SH IY HH IY HH IY IH Z IH Z K AH T IH NG",
+        "prediction": "SH IY HH HH IY Z IH Z  P AH K  T IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "AE N D DH IH S F EH L AH IH Z B AA R T IH NG",
+        "prediction": "AE N D DH IH S HH  AE L AH T IH Z  B AA R  T IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT03-put",
+        "prompt": "put",
+        "actual": "<sil> AY D OW N OW D EY R P UH IH N IH T D AW N S AH M W EY R",
+        "prediction": "AY D AY N UH T R  P UH IH N HH IH T  D AW N  S AH M W ER R"
+    },
+    {
+        "id": "wozniak02a-VNT04-send",
+        "prompt": "send",
+        "actual": "HH IY S EH N T IH T T UW HH IH Z IY DH ER HH IH Z M AH DH ER AO R HH IH Z HH IH Z W AY F AO R S AH M B AH D IY",
+        "prediction": "HH IY Z  S EH N D IH T UW HH IH Z IY DH ER HH IH Z  M AH DH ER AO R HH IH Z HH IH Z  L AY TH  F AO R  S AH M  B AH D IY"
+    },
+    {
+        "id": "wozniak02a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "DH IH S F EH L AH IH Z AH M D R AY V IH NG",
+        "prediction": "DH IH S  F EH L AH IH Z AH D  R AY V IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "W EH L AY D OW N T N OW M EH N W UH D IH N T D UW DH AE T B AH T AH M W AA SH IH NG",
+        "prediction": "AY D OW N T D OW L  M  AE N  W UH D IH N  D UW DH  AE T  B AH T AH W AA SH IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT07-read",
+        "prompt": "read",
+        "actual": "R IY D IH NG T UW DH IH S M AE N",
+        "prediction": "R IY D IH NG T UW DH IH S  M  AE N"
+    },
+    {
+        "id": "wozniak02a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "OW DH IH S W AH N IH Z L AE F IH NG AE N L AE F IH NG",
+        "prediction": "OW DH IH S  W AH N IH Z  L  AE F IH NG  AE N  L  AE F IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT10-give",
+        "prompt": "give",
+        "actual": "SH IY IH Z G IH V IH N IH NG G IH V IH NG T UW S AH M B AH D IY",
+        "prediction": "SH IY IH Z  G IH V IH N IH G IH V IH NG T UW S AH M  B AH D"
+    },
+    {
+        "id": "wozniak02a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "AE N D DH IH S M AE N IH Z S SH SH SH P R IH NG IH NG SH SH P R IH NG IH NG AH EH S D AH B AH L Y UW AY EH M S P R IH NG Y AE M AY M AY EH S AO R N AA T DH EY R DH EY R W ER K IH NG AA N DH AE T",
+        "prediction": "AE N  D DH IH S  M  AE N IH Z  S  S  P  R IH NG IH NG S  S  P  R IH NG N IH NG AH EH S D AA G AH L  D Y UW AY EH M  S  P  R IH NG Y EH M AY M AY EH S AA R  N AA T DH EY R DH EY R  W ER  K IH NG AA N AA"
+    },
+    {
+        "id": "wozniak02a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "T ER N IH NG",
+        "prediction": "T ER N IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "P IH N CH",
+        "prediction": "P IH N CH"
+    },
+    {
+        "id": "wozniak02a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "DH AH L IH L DH AH B EY B IY IH Z T R AA IH Z T R AY N IH NG T UW S IY T R <sil> S IY AA R EY D AH B AH L Y UW AY EH N JH IY SH HH IY SH IY IH Z K R AY N AA T D R AY V IH NG SH IY IH Z AA N Y ER AE AH SH IY IH Z N OW",
+        "prediction": "DH AH DX L  D DH AH B EY B IY IH Z  T  R AY IH Z T  R AY N IH NG T  S IY T  SH IY AA R EY D AA B AH G  Y OW AY  AE N  D  SH IY SH HH IY SH IY K  R AY  AE D  N AA T  L AY V IH NG SH IY IH Z AA N HH ER AH AH SH IY IH Z N OW"
+    },
+    {
+        "id": "wozniak02a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "SH IY W EH L HH IY Z B R IH NG IH NG IH T T UW DH AH M AE N",
+        "prediction": "SH IY Z W EH L HH IY Z  B  R IY IH N IH T  T UW DH AH M  AE N D"
+    },
+    {
+        "id": "wozniak02a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "P IY OW D AH B AH L Y UW N OW P ER N IH NG AH <sil> P ER P P ER L P P IY <sil> P ER N IH NG",
+        "prediction": "P IY OW D AA D AH  Y UW N OW P ER N IH NG AH ER L P P IY  P ER N IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "EY CH OW D AH B AH L Y UW EH L",
+        "prediction": "V EY N CH OW D EH V AH L  Y UW EH"
+    },
+    {
+        "id": "wozniak02a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "F F OW SH IY IH Z F R OW N IH NG IH T F R OW D F R OW D AH N T AH S AH M B AH D IY",
+        "prediction": "F  OW SH IY IH Z  F  R OW N IH NG IH T  F  R OW D  F  R OW D IH N  T AH S AH M  B AH D IY"
+    },
+    {
+        "id": "wozniak02a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "L UH K S L AY K HH IY Z B AY T IH NG HH IH M",
+        "prediction": "L UH L UH K  L AY K HH IY Z  B AY T IH NG HH IH M"
+    },
+    {
+        "id": "wozniak02a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "P UH SH",
+        "prediction": "P UH SH"
+    },
+    {
+        "id": "wozniak02a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "T IH N T IH N IY EY T IY T IH AH T IH K AH N IH NG T IH K AH L IH NG T IH K AH L IH NG T IH K AH L IH NG T IH K AH L",
+        "prediction": "T IH N T IH M IY EY K T IY T EH T IH K AH L IH N  T IH K AH L IH NG T IH K AH L IH NG T IH K AH N  T IH K AH L IH NG"
+    },
+    {
+        "id": "wozniak02a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "SH EY V IH NG",
+        "prediction": "SH EY V IH NG"
+    },
+    {
+        "id": "wozniak03a-BNT01-house",
+        "prompt": "house",
+        "actual": "AE N HH AW S",
+        "prediction": "AH HH OW S"
+    },
+    {
+        "id": "wozniak03a-BNT02-comb",
+        "prompt": "comb",
+        "actual": "K OW M",
+        "prediction": "HH AO R  N"
+    },
+    {
+        "id": "wozniak03a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "B R AH SH",
+        "prediction": "B R AH UH SH"
+    },
+    {
+        "id": "wozniak03a-BNT04-octopus",
+        "prompt": "octopus",
+        "actual": "AA K T AH B AH S",
+        "prediction": "AA K  T AH B UH S"
+    },
+    {
+        "id": "wozniak03a-BNT05-bench",
+        "prompt": "bench",
+        "actual": "B EH N CH",
+        "prediction": "B EH N CH"
+    },
+    {
+        "id": "wozniak03a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "V AA L K EY N OW",
+        "prediction": "AA  K IH N UW"
+    },
+    {
+        "id": "wozniak03a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "K AH N UW",
+        "prediction": "K AH N UW"
+    },
+    {
+        "id": "wozniak03a-BNT08-beaver",
+        "prompt": "beaver",
+        "actual": "B IY V ER",
+        "prediction": "B IY V ER"
+    },
+    {
+        "id": "wozniak03a-BNT09-cactus",
+        "prompt": "cactus",
+        "actual": "K AE K T AH S",
+        "prediction": "K  AE K  T UH S"
+    },
+    {
+        "id": "wozniak03a-BNT10-hammock",
+        "prompt": "hammock",
+        "actual": "HH AE M AA K",
+        "prediction": "HH AW L AA K IH N"
+    },
+    {
+        "id": "wozniak03a-BNT11-stethoscope",
+        "prompt": "stethoscope",
+        "actual": "S T EH TH AH S K OW P",
+        "prediction": "AE EH AH S  K OW P"
+    },
+    {
+        "id": "wozniak03a-BNT12-unicorn",
+        "prompt": "unicorn",
+        "actual": "Y UW N IY K AO R N",
+        "prediction": "Y UW N IH K AA R"
+    },
+    {
+        "id": "wozniak03a-BNT13-tripod",
+        "prompt": "tripod",
+        "actual": "T R EH N",
+        "prediction": "K AH T"
+    },
+    {
+        "id": "wozniak03a-BNT14-sphinx",
+        "prompt": "sphinx",
+        "actual": "S P IH N CH",
+        "prediction": "S  P IH N CH"
+    },
+    {
+        "id": "wozniak03a-BNT15-palette",
+        "prompt": "palette",
+        "actual": "P AE L AH T",
+        "prediction": "P AA AH N T"
+    },
+    {
+        "id": "wozniak03a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "N DH AH S IH Z ER Z",
+        "prediction": "DH AH S IH Z ER Z"
+    },
+    {
+        "id": "wozniak03a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "HH AH D AH L",
+        "prediction": "P AA D ER"
+    },
+    {
+        "id": "wozniak03a-VNT04-send",
+        "prompt": "send",
+        "actual": "DH AH L EH T ER IH Z",
+        "prediction": "DH EY R  Z  AE T TH IH SH SH AH Z"
+    },
+    {
+        "id": "wozniak03a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "D R AY V IH NG",
+        "prediction": "T  R EY Z IH NG"
+    },
+    {
+        "id": "wozniak03a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "W AA SH IH NG D AH",
+        "prediction": "W AA SH IH N"
+    },
+    {
+        "id": "wozniak03a-VNT07-read",
+        "prompt": "read",
+        "actual": "R IY D IH NG DH AH",
+        "prediction": "R IY D IH N DH AH"
+    },
+    {
+        "id": "wozniak03a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "L AE F IH N",
+        "prediction": "L AA TH AH N"
+    },
+    {
+        "id": "wozniak03a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "DH AH D AA G IH Z IH N DH AH K AE T",
+        "prediction": "DH AH D AA G IH Z IH N DH AH K  AE T"
+    },
+    {
+        "id": "wozniak03a-VNT10-give",
+        "prompt": "give",
+        "actual": "P R EH Z AH N",
+        "prediction": "P R IH Z AH N  T"
+    },
+    {
+        "id": "wozniak03a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "S W IH M AH N S W IH M AH N",
+        "prediction": "S  W IH M IH N  S  W IH M IH N"
+    },
+    {
+        "id": "wozniak03a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "S T ER IH NG S T ER IH NG",
+        "prediction": "S  T ER IH N  P AO R IH NG"
+    },
+    {
+        "id": "wozniak03a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "P IH N CH IH N",
+        "prediction": "P IH N CH IH N"
+    },
+    {
+        "id": "wozniak03a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "W AA K AH W EY",
+        "prediction": "W AA L  K AH W IY"
+    },
+    {
+        "id": "wozniak03a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "P AA R S AH L AE N DH AH",
+        "prediction": "P AA SH IH N IH N DH AH"
+    },
+    {
+        "id": "wozniak03a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "D R IH NG K IH NG DH AH",
+        "prediction": "D  R IH NG K IH N DH EY"
+    },
+    {
+        "id": "wozniak03a-VNT17-howl",
+        "prompt": "howl",
+        "actual": "HH AW L IH N",
+        "prediction": "P OW Z IH N"
+    },
+    {
+        "id": "wozniak03a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "F L IH NG IH NG DH AH",
+        "prediction": "F IH NG IH N DH AH"
+    },
+    {
+        "id": "wozniak03a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "B AY T IH NG DH AH",
+        "prediction": "B AY T IH N DH EY R"
+    },
+    {
+        "id": "wozniak03a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "T IH K AH L IH N",
+        "prediction": "T IH K AH L IH M"
+    },
+    {
+        "id": "wozniak03a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "CH EY V IH N",
+        "prediction": "SH EY V IH N"
+    },
+    {
+        "id": "wright206a-BNT01-house",
+        "prompt": "house",
+        "actual": "HH AW S",
+        "prediction": "AH HH AW S"
+    },
+    {
+        "id": "wright206a-BNT03-toothbrush",
+        "prompt": "toothbrush",
+        "actual": "T IY TH",
+        "prediction": "T IY"
+    },
+    {
+        "id": "wright206a-BNT06-volcano",
+        "prompt": "volcano",
+        "actual": "F AY ER",
+        "prediction": "F AY AH N"
+    },
+    {
+        "id": "wright206a-BNT07-canoe",
+        "prompt": "canoe",
+        "actual": "R OW K AH L IH NG",
+        "prediction": "V OW S  T EY DX EY N"
+    },
+    {
+        "id": "wright206a-VNT01-cut",
+        "prompt": "cut",
+        "actual": "K AH T S",
+        "prediction": "K AH T T"
+    },
+    {
+        "id": "wright206a-VNT02-bark",
+        "prompt": "bark",
+        "actual": "AH M AH M SH AW T SH AW T",
+        "prediction": "AH M AH M  AH SH AW T SH T"
+    },
+    {
+        "id": "wright206a-VNT03-put",
+        "prompt": "put",
+        "actual": "N OW B AH T D AW N",
+        "prediction": "N OW B EH T  D AW N"
+    },
+    {
+        "id": "wright206a-VNT04-send",
+        "prompt": "send",
+        "actual": "AH M R IY D IH NG",
+        "prediction": "AH M  R IY D IH NG"
+    },
+    {
+        "id": "wright206a-VNT05-drive",
+        "prompt": "drive",
+        "actual": "AH M DH AH K AA R AH M L AY T DH AH D R AY V IH NG DH AH K AA R",
+        "prediction": "AH M  K AA R AH M  L AY  S EH D D  R AY V IH NG DH AH K AA R"
+    },
+    {
+        "id": "wright206a-VNT06-wash",
+        "prompt": "wash",
+        "actual": "AH M S OW P",
+        "prediction": "AH M  S OW P"
+    },
+    {
+        "id": "wright206a-VNT07-read",
+        "prompt": "read",
+        "actual": "M UW Z IH K",
+        "prediction": "M IY Z IH K"
+    },
+    {
+        "id": "wright206a-VNT08-laugh",
+        "prompt": "laugh",
+        "actual": "L AE F",
+        "prediction": "L  AE AH"
+    },
+    {
+        "id": "wright206a-VNT09-watch",
+        "prompt": "watch",
+        "actual": "D AA G AE N K AE T S T IY V IY",
+        "prediction": "D AA G AH K  AE T S  T IY V IY"
+    },
+    {
+        "id": "wright206a-VNT10-give",
+        "prompt": "give",
+        "actual": "AH M G IH V",
+        "prediction": "AH M  G IH V"
+    },
+    {
+        "id": "wright206a-VNT11-swim",
+        "prompt": "swim",
+        "actual": "R EY S AH M R EY S AH M",
+        "prediction": "AH M  R IY S  AH M R EY S AH M"
+    },
+    {
+        "id": "wright206a-VNT12-stir",
+        "prompt": "stir",
+        "actual": "M AA M AH M AH M <sil> IY T N OW AH M W AA DX ER N OW AH M",
+        "prediction": "M AA L AH M AH M IY N AO W AA D ER N OW AH M"
+    },
+    {
+        "id": "wright206a-VNT13-pinch",
+        "prompt": "pinch",
+        "actual": "AH M AH M AW CH",
+        "prediction": "AH M AH M  AW CH"
+    },
+    {
+        "id": "wright206a-VNT14-crawl",
+        "prompt": "crawl",
+        "actual": "OW AH G ER L AH M P L EY IH NG D AH G ER L",
+        "prediction": "OW  G ER L AH M  P  L EY N D AH G ER"
+    },
+    {
+        "id": "wright206a-VNT15-deliver",
+        "prompt": "deliver",
+        "actual": "G IH V AH M",
+        "prediction": "G IH V AH M"
+    },
+    {
+        "id": "wright206a-VNT16-pour",
+        "prompt": "pour",
+        "actual": "G ER L AH M B OY G ER L AH M B OY AH M K IH CH AH N N OW AH M G ER L AE N B OY K IH CH AH N AH M P L IY Z G ER L AE N B OY",
+        "prediction": "G ER L AH M  B OY  G ER L AH M  B OY AH M  K IH CH IH N N AA M  G ER AH M  B OY K IH CH IH N AH M  P  L IY AO AH M  B OY"
+    },
+    {
+        "id": "wright206a-VNT18-throw",
+        "prompt": "throw",
+        "actual": "K EH CH",
+        "prediction": "K EH CH"
+    },
+    {
+        "id": "wright206a-VNT19-bite",
+        "prompt": "bite",
+        "actual": "AH M B AY T IH NG",
+        "prediction": "AH M  B AY T IH NG"
+    },
+    {
+        "id": "wright206a-VNT20-shove",
+        "prompt": "shove",
+        "actual": "AH M F AY T IH NG DH AH D AA G N OW N OW M W EY F AY <sil> B OY AE N D G ER L <sil> W EY B OY AE N D G ER L K IH K DH AH G ER L",
+        "prediction": "AH M  F AY T IH NG DH AH D AA G  N OW N OW M  W AY IH T F AY B OY AH IH N  G ER  W AY  B OY  AE N  G ER L K  AE DH AH G ER L"
+    },
+    {
+        "id": "wright206a-VNT21-tickle",
+        "prompt": "tickle",
+        "actual": "AH F AH N IY L AE F M AA M N OW D AE D N OW G ER L AE N D B OY L AE F",
+        "prediction": "AH S  F AH N N IY L  AE F M OW M  N OW  D AW D  N OW  G ER  AE N  B OY L  AE F"
+    },
+    {
+        "id": "wright206a-VNT22-shave",
+        "prompt": "shave",
+        "actual": "G ER L AH M R EY Z ER",
+        "prediction": "G ER L AH M  R EY Z ER"
+    }
+]
