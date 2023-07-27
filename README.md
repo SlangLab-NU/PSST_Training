@@ -1,5 +1,9 @@
 # PSST_Training
 
+## Training the Model
+
+Ensure git-lfs is installed in the conda envrionment by running ```conda install -c conda-forge git-lfs```
+
 ## Inference
 
 To decode a model and run inference, we can run the notebook ```run-inference.ipynb```
