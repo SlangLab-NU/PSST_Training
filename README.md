@@ -30,7 +30,7 @@ To install the pssteval library run
 With the pssteval library installed, we can run the the command
 ```pssteval-asr --out-dir path/to/directory/to/write/to path/to/decode/*.tsv```
 
-Operating in the work/van-speech-nlp directory on the discovery cluster will require modification to the backend code in the pssteval library. To run the asr evaluation, the code needs the path to the psst.data dataset. This can be seen below in the file loading.py, which is accessed at: ```path/to/psst-data```
+Operating in the work/van-speech-nlp directory on the discovery cluster will require modification to the backend code in the psstdata library. To run the asr evaluation, the code needs the path to the psst-data dataset. This can be seen below in the file loading.py, which is accessed at: ```<conda env>/lib/<python version>/site-packages/psstdata/loading.py```
 
 ![image](https://github.com/SlangLab-NU/PSST_Training/assets/105329387/8fa25b4e-32db-4596-8d53-d3b24b6270b1)
 
