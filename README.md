@@ -10,6 +10,17 @@ To decode a model and run inference, we can run the notebook ```run-inference.ip
 
 When importing a model, make sure you are pulling from the correct Hugging Face repo. Furthermore, ensure the paths to the psst data csv files are up to date.
 
+### Updating the vocab
+
+When running inference on a model we have to make sure we are using the same vocabulary as the model. Furthermore, our inference script requires a 'space' on either side of a phoneme. To ensure you are using the correct vocabulary, copy the vocabulary either from the vocab.json produced by the model script, or if you have run the training script recently, the vocabulary should be avaiable in a dict format.
+
+![image](https://github.com/SlangLab-NU/PSST_Training/assets/105329387/d0a63c76-bd1f-4749-a819-a6f479387577)
+
+Copy into inference script and add spaces like below.
+
+![image](https://github.com/SlangLab-NU/PSST_Training/assets/105329387/95d40442-debb-481d-bb32-2ca64c1983ad)
+
+
 Once the notebook has been run, tsv file(s) will be written to an ```out``` directory. These will contain the asr predictions for the respective valid, train, or test datasets. The created tsv files will then be used to run evaluation on.
 
 ## Running PSST Eval
