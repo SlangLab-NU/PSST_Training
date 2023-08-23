@@ -31,7 +31,6 @@ def prepare_dataset(data_instance, processor: Wav2Vec2Processor):
 
 
 def compute_metrics(pred, processor):
-
     cer_metric = load_metric("cer", revision="master")
 
     pred_logits = pred.predictions
@@ -115,7 +114,7 @@ def main(input_dir: str, output_dir: str):
         mask_time_prob=float(model_config["mask_time_prob"]),
         mask_feature_length=int(model_config["mask_feature_length"]),
         mask_feature_prob=float(model_config["mask_feature_prob"]),
-        # vocab_size=model_config["vocab_size"],
+        vocab_size=len(processor.tokenizer),
     )
 
     model.freeze_feature_extractor()

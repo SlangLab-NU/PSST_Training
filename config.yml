@@ -9,7 +9,6 @@ model:
   mask_time_prob: 0.65
   mask_feature_length: 64
   mask_feature_prob: 0.25
-  vocab_size: len(processor.tokenizer)
 
 training_arguments:
   output_dir: repo_name
