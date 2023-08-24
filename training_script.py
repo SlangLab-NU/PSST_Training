@@ -2,6 +2,7 @@ import psstdata
 import os
 import numpy as np
 import yaml
+import torch
 from datasets import load_dataset, Audio, load_metric
 import json
 from transformers import (Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, Wav2Vec2ForCTC,
@@ -21,7 +22,7 @@ def prepare_dataset(data_instance, processor: Wav2Vec2Processor):
     audio = data_instance[file_path_column]
 
     data_instance["input_values"] = processor(audio["array"],
-                                              sampling_rate=audio["sampling_rate"])
+                                              sampling_rate=audio["sampling_rate"]).input_values[0]
 
     data_instance["input_length"] = len(data_instance["input_values"])
     with processor.as_target_processor():
@@ -56,10 +57,9 @@ def main(input_dir: str, output_dir: str):
 
     dict_ltr = {}
     for arpa, idx in psstdata.VOCAB_ARPABET.items():
-        if arpa in (psstdata.PAD, psstdata.UNK):
-            continue
         dict_ltr[arpa] = idx
 
+    # HF requires pad token to be a part of the dictionary, compared to fairseq where idx 0 is reserved for <pad>
     vocab_file = os.path.join(output_dir, 'psst_dict.json')
     with open(vocab_file, mode="w") as vocab_file_json:
         json.dump(dict_ltr, vocab_file_json)
@@ -67,7 +67,7 @@ def main(input_dir: str, output_dir: str):
     tokenizer = Wav2Vec2CTCTokenizer(vocab_file,
                                      unk_token=psstdata.UNK,
                                      pad_token=psstdata.PAD,
-                                     word_delimiter_token='|')
+                                     word_delimiter_token='|',)
 
     feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1,
                                                  sampling_rate=16000,
@@ -89,12 +89,6 @@ def main(input_dir: str, output_dir: str):
                                                           num_proc=4,
                                                           fn_kwargs={"processor": processor})
 
-    print("hellos")
-
-    print(dataset_dict["train"])
-    print(dataset_dict["valid"])
-    print(dataset_dict["test"])
-
     data_collator = DataCollatorCTCWithPadding(processor=processor, padding=True)
 
     with open("config.yml", "r") as ymlfile:
@@ -106,7 +100,7 @@ def main(input_dir: str, output_dir: str):
     model = Wav2Vec2ForCTC.from_pretrained(
         model_config["pretrained"],
         ctc_loss_reduction=model_config["ctc_loss_reduction"],
-        pad_token_id=model_config["pad_token_id"],
+        pad_token_id=processor.tokenizer.pad_token_id,
         attention_dropout=float(model_config["attention_dropout"]),
         hidden_dropout=float(model_config["hidden_dropout"]),
         feat_proj_dropout=float(model_config["feat_proj_dropout"]),
@@ -118,6 +112,7 @@ def main(input_dir: str, output_dir: str):
     )
 
     model.freeze_feature_extractor()
+    torch.cuda.empty_cache()
 
     training_args = TrainingArguments(
         output_dir=training_config["output_dir"],
