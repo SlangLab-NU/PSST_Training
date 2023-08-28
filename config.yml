@@ -11,11 +11,11 @@ model:
   mask_feature_prob: 0.25
 
 training_arguments:
-  output_dir: repo_name
+  output_dir: first_full_train
   group_by_length: True
-  per_device_train_batch_size: 8
-  per_device_eval_batch_size: 16
-  gradient_accumulation_steps: 2
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+  gradient_accumulation_steps: 4
   evaluation_strategy: steps
   num_train_epochs: 50
   fp16: False
@@ -31,3 +31,8 @@ training_arguments:
   adam_epsilon: 1e-8
   adam_beta1: 0.9
   adam_beta2: 0.98
+
+inference:
+  model: JordanWHLewis/hyperparam-fairseq-match_V3
+  sampling_rate: 16000
+  num_proc: 4

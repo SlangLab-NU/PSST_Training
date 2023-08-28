@@ -31,21 +31,7 @@ def prepare_dataset(data_instance, processor: Wav2Vec2Processor):
     return data_instance
 
 
-def compute_metrics(pred, processor):
-    cer_metric = load_metric("cer", revision="master")
 
-    pred_logits = pred.predictions
-    pred_ids = np.argmax(pred_logits, axis=-1)
-
-    pred.label_ids[pred.label_ids == -100] = processor.tokenizer.pad_token_id
-
-    pred_str = processor.batch_decode(pred_ids)
-    # we do not want to group tokens when computing the metrics
-    label_str = processor.batch_decode(pred.label_ids, group_tokens=False)
-
-    cer = cer_metric.compute(predictions=pred_str, references=label_str)
-
-    return {"cer": cer}
 
 
 def main(input_dir: str, output_dir: str):
@@ -137,10 +123,27 @@ def main(input_dir: str, output_dir: str):
         push_to_hub=training_config["push_to_hub"],
     )
 
+    def compute_metrics(pred):
+        cer_metric = load_metric("cer", revision="master")
+
+        pred_logits = pred.predictions
+        pred_ids = np.argmax(pred_logits, axis=-1)
+
+        pred.label_ids[pred.label_ids == -100] = processor.tokenizer.pad_token_id
+
+        pred_str = processor.batch_decode(pred_ids)
+        # we do not want to group tokens when computing the metrics
+        label_str = processor.batch_decode(pred.label_ids, group_tokens=False)
+
+        cer = cer_metric.compute(predictions=pred_str, references=label_str)
+
+        return {"cer": cer}
+
     trainer = Trainer(
         model=model,
         data_collator=data_collator,
         args=training_args,
+        compute_metrics=compute_metrics,
         train_dataset=dataset_dict["train"],
         eval_dataset=dataset_dict["valid"],
         tokenizer=processor.feature_extractor,
