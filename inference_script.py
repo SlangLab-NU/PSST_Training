@@ -4,7 +4,7 @@ import librosa
 import numpy as np
 import yaml
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
-from datasets import load_dataset, load_metric, DatasetDict, Dataset, Audio
+from datasets import load_dataset, Audio
 import torch
 
 file_path_columns_to_remove = ["aq_index", "test", "duration_frames", "filename_new"]
@@ -12,12 +12,27 @@ file_path_column = "filename_old"
 
 
 def change_file_paths(data_instance, data_dir: str):
+    """
+    Updates the file path for the dir of the audio files
+    :param data_instance: The test, train or valid dataset to update
+    :param data_dir: The directory to the audio files
+    :return: THe updated dataset
+    """
     data_instance[file_path_column] = os.path.join(data_dir,
                                                    data_instance[file_path_column])
     return data_instance
 
 
 def prepare_dataset(data_instance, processor: Wav2Vec2Processor):
+    """
+    Modifies the training, test, or validation dataset dictionary to contain the audio values and
+    speech transcripts.
+    :param data_instance: The test, validation, or train dataset
+    :param processor: The Wav2Vec2Processor from the pretrained model
+    :return: The modified dataset
+    """
+
+    # Load the audio data into batch
     audio = data_instance[file_path_column]
 
     # Extract the values from the audio files
@@ -61,6 +76,19 @@ def get_config_file():
 
 
 def predictions_list(dataset, processor, device, model):
+    """
+    Generates a series of predictions for a NLP model. Predictions are based off of torch logits and assigned to
+    a phoneme. The prediction pulls the utterance ID and the prediction.
+    There are a series of print statements in this script that can be used to visualize the predictions from the
+    model. These SHOULD be commented out when running the final version, but for running a sample test this is
+    good to have to verify how well the model is working
+    :param dataset: The train, test, or validation dataset to run evaluation on
+    :param processor: The Wav2Vec2 processor from the trained model
+    :param device: The cpu or gpu being used to run the script
+    :param model: The model the predictions are being based on
+    :return: A list containing the utterance ID of a given speaker and the predicted phonemes of a word they
+             have spoken.
+    """
     res = []
     for i in range(len(dataset['transcript'])):
         input_values = np.array(dataset['input_values'][i])
@@ -93,6 +121,15 @@ def predictions_list(dataset, processor, device, model):
 
 
 def write_tsv(output_dir, filename, dataset, dataset_predictions):
+    """
+    Writes the output from predictions_list() into a tsv file. This is the format required to calculate PER
+    used by the PSST Baseline evaluation
+    :param output_dir: The directory to write the tsv to
+    :param filename: The name of the tsv file
+    :param dataset: The dataset the predictions were based off
+    :param dataset_predictions: The predictions list generated from predictions_list()
+    :return: A tsv file containing the utterance ID and prediction for that utterance
+    """
     with open(os.path.join(output_dir, filename), "w") as f:
         writer = csv.writer(f, dialect=csv.excel_tab)
         writer.writerow(("utterance_id", "asr_transcript"))
