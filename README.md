@@ -4,7 +4,19 @@
 
 Ensure git-lfs is installed in the conda envrionment by running ```conda install -c conda-forge git-lfs```
 
-## Inference
+## Inference On Polaris
+
+To run inference on Polaris, we will be running ```inference_script.py```. Before running the script, we need to make sure the configuration variables are up to date. Open ```config.yml``` and ensure the model that inference is being run on is correct. If the sampling rate or processes needs updating this can be updated here, but generally these will remain constant at sr = 16000 and num_proc = 4. 
+
+![image](https://github.com/SlangLab-NU/PSST_Training/assets/105329387/aba74711-137c-419c-ba3d-d2cb9c5fbc4c)
+
+With the appropriate model in the configuration file, to run inference simply run ```python inference_script.py``` with the venv activated. 
+
+### Possible Errors
+
+If there are errors loading the model from Hugging Face, the most likely errors are from the tokenizer_config.json or vocab.json not being loaded to the HF repo. Check the model's repo and verify that these files exist. These should be automatically uploaded when running the training script, but there are instances where this might not occur. If one or both files do not exist these can be manually uploaded to the repo.
+
+## Inference On The Discovery Cluster
 
 To decode a model and run inference, we can run the notebook ```run-inference.ipynb```
 
