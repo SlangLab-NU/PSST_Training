@@ -30,11 +30,14 @@ def prepare_dataset(data_instance, processor: Wav2Vec2Processor):
 
     return data_instance
 
-
-
-
-
 def main(input_dir: str, output_dir: str):
+
+    with open("config_v1.yml", "r") as ymlfile:
+        cfg = yaml.full_load(ymlfile)
+
+    model_config = cfg["model"]
+    training_config = cfg["training_arguments"]
+
     dataset_dict = load_dataset('csv', data_files={
         "train": '/home/data1/psst-data-csv/train_utterances_excel.csv',
         "valid": '/home/data1/psst-data-csv/valid_utterances_excel.csv',
@@ -46,7 +49,7 @@ def main(input_dir: str, output_dir: str):
         dict_ltr[arpa] = idx
 
     # HF requires pad token to be a part of the dictionary, compared to fairseq where idx 0 is reserved for <pad>
-    vocab_file = os.path.join(output_dir, 'psst_dict.json')
+    vocab_file = './psst_dict.json'
     with open(vocab_file, mode="w") as vocab_file_json:
         json.dump(dict_ltr, vocab_file_json)
 
@@ -54,7 +57,7 @@ def main(input_dir: str, output_dir: str):
                                      unk_token=psstdata.UNK,
                                      pad_token=psstdata.PAD,
                                      word_delimiter_token='|',)
-
+    tokenizer.push_to_hub(os.path.join("Aanchan"),training_config["output_dir"])
     feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1,
                                                  sampling_rate=16000,
                                                  padding_value=0.0,
@@ -77,11 +80,6 @@ def main(input_dir: str, output_dir: str):
 
     data_collator = DataCollatorCTCWithPadding(processor=processor, padding=True)
 
-    with open("config.yml", "r") as ymlfile:
-        cfg = yaml.full_load(ymlfile)
-
-    model_config = cfg["model"]
-    training_config = cfg["training_arguments"]
 
     model = Wav2Vec2ForCTC.from_pretrained(
         model_config["pretrained"],
@@ -120,7 +118,7 @@ def main(input_dir: str, output_dir: str):
         adam_beta1=float(training_config["adam_beta1"]),
         adam_beta2=float(training_config["adam_beta2"]),
         save_total_limit=training_config["save_total_limit"],
-        push_to_hub=training_config["push_to_hub"],
+        push_to_hub=training_config["push_to_hub"]
     )
 
     def compute_metrics(pred):
@@ -134,7 +132,8 @@ def main(input_dir: str, output_dir: str):
         pred_str = processor.batch_decode(pred_ids)
         # we do not want to group tokens when computing the metrics
         label_str = processor.batch_decode(pred.label_ids, group_tokens=False)
-
+        print(f'label_str:{label_str}')
+        print(f'pred_str:{pred_str}')
         cer = cer_metric.compute(predictions=pred_str, references=label_str)
 
         return {"cer": cer}
@@ -148,11 +147,11 @@ def main(input_dir: str, output_dir: str):
         eval_dataset=dataset_dict["valid"],
         tokenizer=processor.feature_extractor,
     )
-
-    trainer.train()
+    trainer.train(resume_from_checkpoint=True)
+    trainer.push_to_hub()
 
 
 if __name__ == "__main__":
     data_input_dir = "/home/data1/psst-data/psst-data-2022-03-02-full"
-    data_output_dir = "/home/data1/psst-data-out"
+    data_output_dir = "/home/data1/work/aanchan/PSST_Training/sample_model"
     main(data_input_dir, data_output_dir)

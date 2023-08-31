@@ -1,5 +1,5 @@
 model:
-  pretrained: facebook/wav2vec2-base
+  pretrained: Aanchan/psst_model_cer_2
   ctc_loss_reduction: mean
   pad_token_id: processor.tokenizer.pad_token_id
   attention_dropout: 0.1
@@ -11,28 +11,24 @@ model:
   mask_feature_prob: 0.25
 
 training_arguments:
-  output_dir: first_full_train
+  output_dir: psst_model_cer_2
   group_by_length: True
   per_device_train_batch_size: 2
   per_device_eval_batch_size: 2
-  gradient_accumulation_steps: 4
+  gradient_accumulation_steps: 8
   evaluation_strategy: steps
-  num_train_epochs: 50
+  num_train_epochs: 150
   fp16: False
   gradient_checkpointing: True
-  save_steps: 200
-  eval_steps: 200
-  logging_steps: 200
-  learning_rate: 3e-4
+  save_steps: 10
+  eval_steps: 10
+  logging_steps: 10
+  learning_rate: 5e-5
   weight_decay: 0
-  warmup_steps: 200
+  warmup_steps: 0
   save_total_limit: 2
   push_to_hub: True
   adam_epsilon: 1e-8
   adam_beta1: 0.9
   adam_beta2: 0.98
-
-inference:
-  model: JordanWHLewis/hyperparam-fairseq-match_V3
-  sampling_rate: 16000
-  num_proc: 4
+  resume_from_checkpoint: True
