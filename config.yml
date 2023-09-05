@@ -33,6 +33,6 @@ training_arguments:
   adam_beta2: 0.98
 
 inference:
-  model: JordanWHLewis/hyperparam-fairseq-match_V3
+  model: JordanWHLewis/hyperparam-fairseq-match_V2
   sampling_rate: 16000
   num_proc: 4

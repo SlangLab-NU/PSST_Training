@@ -3,7 +3,8 @@ import csv
 import librosa
 import numpy as np
 import yaml
-from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
+from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor, pipeline
+from transformers.pipelines.pt_utils import KeyDataset
 from datasets import load_dataset, Audio
 import torch
 
@@ -75,7 +76,7 @@ def get_config_file():
     return cfg["inference"]
 
 
-def predictions_list(dataset, processor, device, model):
+def predictions_list(dataset, processor, model):
     """
     Generates a series of predictions for a NLP model. Predictions are based off of torch logits and assigned to
     a phoneme. The prediction pulls the utterance ID and the prediction.
@@ -84,39 +85,22 @@ def predictions_list(dataset, processor, device, model):
     good to have to verify how well the model is working
     :param dataset: The train, test, or validation dataset to run evaluation on
     :param processor: The Wav2Vec2 processor from the trained model
-    :param device: The cpu or gpu being used to run the script
     :param model: The model the predictions are being based on
     :return: A list containing the utterance ID of a given speaker and the predicted phonemes of a word they
              have spoken.
     """
     res = []
-    for i in range(len(dataset['transcript'])):
-        input_values = np.array(dataset['input_values'][i])
-        sampling_rate = dataset['input_length'][i]
 
-        # Resample the input speech to match the model's sampling rate
-        input_values = librosa.resample(input_values, orig_sr=sampling_rate, target_sr=16000)
-        input_values = processor(input_values, sampling_rate=16000, return_tensors="pt").input_values
-        input_values = input_values.to(device)  # Move input to the same device as the model
+    pipe = pipeline(task="automatic-speech-recognition", model=model, tokenizer=processor,
+                    feature_extractor=processor.feature_extractor, device=0)
 
-        with torch.no_grad():
-            logits = model(input_values).logits
-
-        predicted_ids = torch.argmax(logits, dim=-1)
-        transcription = processor.decode(predicted_ids[0], clean_up_tokenization_spaces=False)
-
-        # Uncomment print to see predicted logits
-        print(predicted_ids[0])
-        prediction = transcription.lstrip().rstrip().replace('  ', ' ').replace('\t', ' ')
-
+    # Print prediction if you want to see predicted output before running full inference
+    for i in range(len(dataset['input_values'])):
+        prediction = pipe(np.array(dataset['input_values'][i]))
+        prediction = prediction["text"]
+        prediction = prediction.lstrip().rstrip().replace('  ', ' ').replace('\t', ' ')
         res.append(prediction)
 
-        # Uncomment print statements to view predictions and reference
-        reference_transcription = dataset['transcript'][i]
-        print("Utterance Id:", dataset['utterance_id'][i])
-        print("Reference:", reference_transcription)
-        print("Prediction:", prediction)
-        print("---")
     return res
 
 
@@ -146,8 +130,8 @@ def main(input_dir: str, output_dir: str):
 
     processor.decode
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model.to(device)
+    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    # model.to(device)
 
     # Load the datasets and observe the structure
     dataset_dict = load_dataset('csv', data_files={
@@ -156,7 +140,7 @@ def main(input_dir: str, output_dir: str):
         "test": '/home/data1/psst-data-csv/test_utterances_excel.csv'
     })
 
-    for dataset in ("train", "valid", "test"):
+    for dataset in ("valid", "test"):
         data_dir = os.path.join(data_input_dir, dataset)
         dataset_dict[dataset] = dataset_dict[dataset].map(change_file_paths,
                                                           fn_kwargs={"data_dir": data_dir})
@@ -170,7 +154,7 @@ def main(input_dir: str, output_dir: str):
     prepare_dictionary(processor)
 
     print("Inference running...")
-    test_predictions = predictions_list(dataset_dict["test"], processor, device, model)
+    test_predictions = predictions_list(dataset_dict["test"], processor, model)
     write_tsv(output_dir, "test.tsv", dataset_dict["test"], test_predictions)
 
 
