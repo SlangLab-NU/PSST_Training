@@ -2,7 +2,7 @@
 
 *.log
 
-.gitignore
+*.gitignore
 
 _pycache_/
 
