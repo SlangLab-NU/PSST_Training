@@ -1,3 +1,9 @@
+**.wav
+
+**.log
+
+.gitignore
+
 _pycache_/
 
 .idea/
