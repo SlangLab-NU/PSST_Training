@@ -2,7 +2,7 @@
 
 ## Installation
 
-First clone the repo and cd into it's directory.
+First, clone the repo and cd into it's directory.
 
 ```bash
 git clone git@github.com:SlangLab-NU/PSST_Training.git
@@ -17,7 +17,7 @@ conda create --name psst-training python=3.8 \
   && conda activate psst-training
 ```
 
-Next install the dependencies from the requirements-hf.txt file.
+Next, install the dependencies from the requirements-hf.txt file.
 
 ```bash
 pip install -r requirements-hf.txt
@@ -35,6 +35,12 @@ Then use notebook_login to sign-in to the Hub, and follow the link [here](huggin
 >>> notebook_login()
 ```
 
+## Training the Model
+
+Ensure git-lfs is installed in the conda environment by running ```conda install -c conda-forge git-lfs```
+
+To run inference on Polaris, we will be running ```python training_script.py```.
+
 ## Inference On Polaris
 
 To run inference on Polaris, we will be running ```python inference_script.py```. Before running the script, we need to make sure the configuration variables are up to date. Open ```config.yml``` and ensure the model that inference is being run on is correct. If the sampling rate or processes needs updating this can be updated here, but generally these will remain constant at sr = 16000 and num_proc = 4. 
@@ -47,16 +53,10 @@ With the appropriate model in the configuration file, to run inference simply ru
 
 If there are errors loading the model from Hugging Face, the most likely errors are from the tokenizer_config.json or vocab.json not being loaded to the HF repo. Check the model's repo and verify that these files exist. These should be automatically uploaded when running the training script, but there are instances where this might not occur. If one or both files do not exist these can be manually uploaded to the repo.
 
-If there are token errors logging into hugging face make sure to revisit the installation steps. You may have missed something.
+If there are token errors logging into huggingface make sure to revisit the installation steps. You may have missed something.
 
 
 Once the file has been run, tsv file(s) will be written to an ```out``` directory. These will contain the asr predictions for the respective valid, train, or test datasets. The created tsv files will then be used to run evaluation on.
-
-## Training the Model
-
-Ensure git-lfs is installed in the conda envrionment by running ```conda install -c conda-forge git-lfs```
-
-To run inference on Polaris, we will be running ```python training_script.py```.
 
 ## Running PSST Eval
 
@@ -73,7 +73,7 @@ To install the pssteval library run
 
 ```/<conda env>/bin/pip install pssteval```
 
-With the pssteval library installed, we can run the the command
+With the pssteval library installed, we can run the command
 ```pssteval-asr --out-dir path/to/directory/to/write/to path/to/decode/*.tsv```
 
 Operating in the work/van-speech-nlp directory on the discovery cluster will require modification to the backend code in the psstdata library. To run the asr evaluation, the code needs the path to the psst-data dataset. This can be seen below in the file loading.py, which is accessed at: ```<conda env>/lib/<python version>/site-packages/psstdata/loading.py```
