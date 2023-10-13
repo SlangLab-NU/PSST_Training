@@ -9,10 +9,7 @@ git clone git@github.com:SlangLab-NU/PSST_Training.git
 cd PSST_Training
 ```
 
-If you are not able to do git clone via ssh (and not https), you might have to set up your ssh tokens correctly. Follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to do so.
-
-
-Once your SSH key is created will need to [add your new SSH key to your github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+If you are not able to do git clone via ssh (and not https), you might have to set up your ssh tokens correctly. Follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to do so. Once your SSH key is created will need to [add your new SSH key to your github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 Create a virtual-env
 ```bash
@@ -22,22 +19,21 @@ conda create --name psst-training python=3.8 \
 
 Next install the dependencies from the requirements-hf.txt file.
 
-'''bash
+```bash
 pip install -r requirements-hf.txt
-'''
+```
 
-Lastly, make sure to store your own huggingface credentials in the cache directory.
+Lastly, make sure to store your own huggingface credentials in the cache directory. This will store your access token in your Hugging Face cache folder (~/.cache/ by default):
 
-This will store your access token in your Hugging Face cache folder (~/.cache/ by default):
-
-'''bash
+```bash
 huggingface-cli login
-'''
+```
 
 Then use notebook_login to sign-in to the Hub, and follow the link [here](huggingface.co/settings/tokens) to generate a token to login with
-'''bash
+```bash
 >>> from huggingface_hub import notebook_login
 >>> notebook_login()
+```
 
 ## Inference On Polaris
 
