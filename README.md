@@ -15,6 +15,9 @@ Create a virtual-env you can use conda, pyenv, or any other virtual environment 
 ```bash
 conda create --name psst-training python=3.8 \
   && conda activate psst-training
+
+pyenv virtualenv 3.8.10 psstbaseline \
+  && pyenv local psstbaseline
 ```
 
 Next, install the dependencies from the requirements-hf.txt file.
