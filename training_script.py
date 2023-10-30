@@ -5,9 +5,11 @@ import yaml
 import torch
 from datasets import load_dataset, Audio, load_metric
 import json
-from transformers import (Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, Wav2Vec2ForCTC,
+from transformers import (Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor,Wav2Vec2Config,Wav2Vec2Processor, Wav2Vec2ForCTC,
                           TrainingArguments, Trainer)
 from data_collator_ctc_with_padding import DataCollatorCTCWithPadding
+from freezing_callback import FreezingCallback
+from transformers import TrainingArguments, Trainer
 
 file_path_column = "filename_old"
 
@@ -35,6 +37,8 @@ def prepare_dataset(data_instance, processor: Wav2Vec2Processor):
 
 
 def main(input_dir: str, output_dir: str):
+    torch.cuda.empty_cache()
+
     dataset_dict = load_dataset('csv', data_files={
         "train": '/home/data1/psst-data-csv/train_utterances_excel.csv',
         "valid": '/home/data1/psst-data-csv/valid_utterances_excel.csv',
@@ -97,8 +101,30 @@ def main(input_dir: str, output_dir: str):
         vocab_size=len(processor.tokenizer),
     )
 
-    model.freeze_feature_extractor()
-    torch.cuda.empty_cache()
+
+    #model.freeze_feature_extractor()
+    #torch.cuda.empty_cache()
+
+    # Determine the number of layers to unfreeze dynamically based on the model's architecture
+    num_layers_to_unfreeze = len(model.wav2vec2.encoder.layers)
+    print(f"Number of hidden layers: {num_layers_to_unfreeze}")    
+    num_epochs = int(training_config["num_train_epochs"])  # The total number of epochs for your training
+
+    # Create a linear unfreezing schedule
+    freezing_schedule = [(0, 6)]  # First 6 layers are frozen
+    for epoch in range(1, num_epochs):
+        if epoch < 6:
+            # Unfreeze only the last layer for the first 5 epochs
+            unfreeze_layers = 6
+        else:
+            # Linearly unfreeze the rest of the layers from the 6th epoch onwards
+            unfreeze_layers = 6 + epoch - 5
+            # Ensure that no more than 12 layers are unfrozen
+            unfreeze_layers = min(unfreeze_layers, num_layers_to_unfreeze)
+
+        freezing_schedule.append((epoch, unfreeze_layers))    
+    print(freezing_schedule)
+
 
     training_args = TrainingArguments(
         output_dir=training_config["output_dir"],
@@ -148,6 +174,10 @@ def main(input_dir: str, output_dir: str):
         eval_dataset=dataset_dict["valid"],
         tokenizer=processor.feature_extractor,
     )
+
+    # Create a FreezingCallback instance
+    freezing_cb = FreezingCallback(freezing_schedule=freezing_schedule, trainer=trainer, model_config=model_config)
+    trainer.add_callback(freezing_cb)
 
     trainer.train()
 
