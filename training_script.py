@@ -87,6 +87,7 @@ def main(input_dir: str, output_dir: str):
     model_config = cfg["model"]
     training_config = cfg["training_arguments"]
 
+
     model = Wav2Vec2ForCTC.from_pretrained(
         model_config["pretrained"],
         ctc_loss_reduction=model_config["ctc_loss_reduction"],
@@ -101,26 +102,25 @@ def main(input_dir: str, output_dir: str):
         vocab_size=len(processor.tokenizer),
     )
 
-
-    #model.freeze_feature_extractor()
-    #torch.cuda.empty_cache()
-
     # Determine the number of layers to unfreeze dynamically based on the model's architecture
-    num_layers_to_unfreeze = len(model.wav2vec2.encoder.layers)
-    print(f"Number of hidden layers: {num_layers_to_unfreeze}")    
+    num_layers = len(model.wav2vec2.encoder.layers)
+    print(f"Number of hidden layers: {num_layers}")
+
+    model.freeze_feature_extractor()
+    #torch.cuda.empty_cache() 
     num_epochs = int(training_config["num_train_epochs"])  # The total number of epochs for your training
 
     # Create a linear unfreezing schedule
-    freezing_schedule = [(0, 6)]  # First 6 layers are frozen
+    freezing_schedule = [(0, num_layers)]  # First 6 layers are frozen
     for epoch in range(1, num_epochs):
         if epoch < 6:
             # Unfreeze only the last layer for the first 5 epochs
-            unfreeze_layers = 6
+            unfreeze_layers = num_layers
         else:
             # Linearly unfreeze the rest of the layers from the 6th epoch onwards
-            unfreeze_layers = 6 + epoch - 5
+            unfreeze_layers = num_layers - (epoch - 6)
             # Ensure that no more than 12 layers are unfrozen
-            unfreeze_layers = min(unfreeze_layers, num_layers_to_unfreeze)
+            unfreeze_layers = max(6, unfreeze_layers)
 
         freezing_schedule.append((epoch, unfreeze_layers))    
     print(freezing_schedule)
@@ -176,7 +176,7 @@ def main(input_dir: str, output_dir: str):
     )
 
     # Create a FreezingCallback instance
-    freezing_cb = FreezingCallback(freezing_schedule=freezing_schedule, trainer=trainer, model_config=model_config)
+    freezing_cb = FreezingCallback(freezing_schedule=freezing_schedule, trainer=trainer, model_config=model_config, num_hidden_layers=num_layers)
     trainer.add_callback(freezing_cb)
 
     trainer.train()
